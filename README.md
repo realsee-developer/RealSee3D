@@ -28,11 +28,11 @@ For a detailed breakdown of dataset statistics, please refer to our website.
 If you use the Realsee3D dataset in your research, please cite our paper:
 
 ```
-@inproceedings{yourname2023realsee3d,
+@inproceedings{linyuan2026realsee3d,
   title={Realsee3D: A Large-Scale Multi-View RGB-D Dataset of Indoor Scenes},
-  author={Your Name, et al.},
-  booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2023}
+  author={Linyuan Li, et al.},
+  booktitle={},
+  year={2026}
 }
 ```
 
