@@ -13,13 +13,12 @@ Realsee3D is a large-scale, multi-view RGB-D dataset containing 10,000 indoor sc
 *   **Comprehensive Annotations:** Includes CAD drawings, floor plans, semantic segmentation, 3D detection labels and more (forthcoming).
 *   **Diverse Scenes:** Comprising 1,000 real-world scenes with varied layouts and decoration styles, and 9,000 procedurally generated scenes utilizing over 100 designer-curated style templates, ensuring diverse furniture models and styles for robust training and testing.
 
-## 🚀 Getting Started
+## 🗃️ Data Organization
 
-To get started with the Realsee3D dataset, please visit our official website for detailed instructions, download links, and documentation.
+The Realsee3D dataset is organized into individual scenes, each containing detailed multi-view RGB-D data. To access and understand the data, please refer to the following resources:
 
-For a detailed explanation of the dataset structure, refer to [DATASET_STRUCTURE.md](DATASET_STRUCTURE.md).
-
-👉 **[Visit the Realsee3D Website](https://yourname.github.io/Realsee3D)**
+*   **Detailed Dataset Structure:** [DATASET_STRUCTURE.md](DATASET_STRUCTURE.md) provides a comprehensive explanation of the file organization and data formats within each scene.
+*   **Download and Usage Instructions:** For information on how to download the dataset and begin using it, please visit our [official website](https://yourname.github.io/Realsee3D).
 
 ## 📊 Statistics
 
