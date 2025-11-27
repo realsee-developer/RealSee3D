@@ -1,5 +1,7 @@
 # 📘 Realsee3D Dataset
 
+![Dataset Overview](assets/dataset_overview.png)
+
 [![Website](https://img.shields.io/badge/Website-visit-blue)](https://yourname.github.io/Realsee3D)
 [![Paper](https://img.shields.io/badge/Paper-read-red)](https://yourname.github.io/Realsee3D)
 [![Download](https://img.shields.io/badge/Download-now-green)](https://yourname.github.io/Realsee3D)
