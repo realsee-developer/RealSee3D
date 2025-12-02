@@ -50,10 +50,6 @@ If you use the Realsee3D dataset in your research, please cite our paper:
 
 ## 📝 License
 
-### Dataset License
-
-The Realsee3D dataset is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
 ### Code License
 
 The accompanying code for data parsing, visualization, and evaluation is released under the [MIT License](https://opensource.org/licenses/MIT), allowing for free use, modification, and distribution.
