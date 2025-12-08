@@ -44,7 +44,7 @@ If you use the Realsee3D dataset in your research, please cite our paper:
 @misc{Li2025realsee3d_data,
   doi = {10.5281/zenodo.17826243},
   url = {https://doi.org/10.5281/zenodo.17826243},
-  author = {Li, Linyuan and Pan, Cihui and Rao, Tong and Zhou, Jie and Wu, Yan and Li, Xi and Wang, Lingli and others},
+  author = {Li, Linyuan and Wu, Yan and Li, Xi and Wang, Lingli and Rao, Tong and Zhou, Jie and Pan, Cihui and Hui, Xinchen},
   title = {Realsee3D: A Large-Scale Multi-View RGB-D Dataset of Indoor Scenes (Version 1.0)},
   publisher = {Zenodo},
   year = {2025}
