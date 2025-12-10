@@ -3,8 +3,8 @@ import numpy as np
 import os
 import cv2
 from tqdm import tqdm
-from .io import load_viewpoint_depth_gt, load_viewpoint_depth_pred
-from .alignment import align_by_ssi_lsq
+from .utils.io import load_viewpoint_depth_gt, load_viewpoint_depth_pred
+from .utils.alignment import align_by_ssi_lsq
 from .depth_metrics import compute_depth_metrics
 
 
