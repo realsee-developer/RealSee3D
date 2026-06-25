@@ -15,14 +15,12 @@ authors:
     given-names: "Jie"
   - family-names: "Pan"
     given-names: "Cihui"
-  - family-names: "Pan"
-    given-names: "Cihui"
   - family-names: "Hui"
     given-names: "Xinchen"
 title: "Realsee3D: A Large-Scale Multi-View RGB-D Dataset of Indoor Scenes"
-version: 1.0.0
-doi: 10.5281/zenodo.17826243
-date-released: 2025-12-05
+version: 1.1.0
+doi: 10.5281/zenodo.17826242
+date-released: 2026-06-25
 url: "https://dataset.realsee.ai/"
 preferred-citation:
   type: data
@@ -41,11 +39,9 @@ preferred-citation:
       given-names: "Jie"
     - family-names: "Pan"
       given-names: "Cihui"
-    - family-names: "Pan"
-      given-names: "Cihui"
     - family-names: "Hui"
       given-names: "Xinchen"
-  doi: "10.5281/zenodo.17826243"
+  doi: "10.5281/zenodo.17826242"
   publisher: "Zenodo"
-  title: "Realsee3D: A Large-Scale Multi-View RGB-D Dataset of Indoor Scenes (Version 1.0)"
-  year: 2025
+  title: "Realsee3D: A Large-Scale Multi-View RGB-D Dataset of Indoor Scenes (Version 1.1)"
+  year: 2026

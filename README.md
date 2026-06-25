@@ -35,7 +35,7 @@ For a detailed breakdown of dataset statistics, please refer to [metadata/README
 
 ## 📋 Changelog
 
-*   **2026-06-24:** Phase II data released — per-viewpoint pixel-wise semantic segmentation (`segment.png`) for both real-world and synthetic scenes. Real-world maps are current-model predictions (not manual annotation); ground-truth annotations are planned for a future release. See [DATASET_STRUCTURE.md](DATASET_STRUCTURE.md) for details.
+*   **2026-06-25:** Phase II data released — per-viewpoint pixel-wise semantic segmentation (`segment.png`) for both real-world and synthetic scenes. Real-world maps are current-model predictions (not manual annotation); ground-truth annotations are planned for a future release. See [DATASET_STRUCTURE.md](DATASET_STRUCTURE.md) for details.
 *   **2025-12-05:** Phase I data(RGB-D pano and extrinsics) released.
 *   **2025-11-28:** Dataset introduction and official website release.
 
@@ -45,12 +45,12 @@ If you use the Realsee3D dataset in your research, please cite our paper:
 
 ```
 @misc{Li2025realsee3d_data,
-  doi = {10.5281/zenodo.17826243},
-  url = {https://doi.org/10.5281/zenodo.17826243},
+  doi = {10.5281/zenodo.17826242},
+  url = {https://doi.org/10.5281/zenodo.17826242},
   author = {Li, Linyuan and Wu, Yan and Li, Xi and Wang, Lingli and Rao, Tong and Zhou, Jie and Pan, Cihui and Hui, Xinchen},
-  title = {Realsee3D: A Large-Scale Multi-View RGB-D Dataset of Indoor Scenes (Version 1.0)},
+  title = {Realsee3D: A Large-Scale Multi-View RGB-D Dataset of Indoor Scenes (Version 1.1)},
   publisher = {Zenodo},
-  year = {2025}
+  year = {2026}
 }
 ```
 
