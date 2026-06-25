@@ -2,6 +2,66 @@
 
 This document provides a detailed statistical analysis of the Realsee3D dataset. The dataset is composed of two primary subsets: real-world scenes captured with 3D scanners and procedurally generated synthetic scenes.
 
+## Semantic Segmentation Class Mappings
+
+The label tables for the per-viewpoint `segment.png` maps live alongside this file as JSON. Each table carries the class names (English/Chinese) and a fixed, deterministic official RGB colour palette (label ID 0 = background → black).
+
+| Subset | File | Classes |
+| :--- | :--- | :--- |
+| Real-world | [`class_mapping_real.json`](class_mapping_real.json) | 150 (IDs 1–197, flat) |
+| Synthetic | [`class_mapping_synthetic.json`](class_mapping_synthetic.json) | 209 (IDs 1–209, three-level taxonomy) |
+
+### JSON schema
+
+Top-level object:
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `subset` | string | `"real"` or `"synthetic"`. |
+| `description` | string | Human-readable summary of the label space. |
+| `num_classes` | int | Number of labelled classes (excludes the background id 0). |
+| `ignore_id` | int | Reserved background / unlabeled / invalid label. Always `0`. |
+| `hierarchical` | bool | `true` for the synthetic subset, `false` for real-world. |
+| `label_source` | string | `"model_prediction"` (real-world) or `"rendered_ground_truth"` (synthetic). See note below. |
+| `classes` | array | List of class entries (see below), sorted by `id`. |
+
+> **Note:** Real-world `segment.png` maps are **predictions from our own trained model**, not manual annotation, and may contain errors. Synthetic maps are exact labels rendered from the scene definition. Human-verified ground-truth annotations for the real-world subset are planned for a future release.
+
+Each entry in `classes`:
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `id` | int | Pixel value used in `segment.png`. |
+| `name` | string | English class name. For the synthetic subset this is the full `level1/level2/level3` path. |
+| `name_zh` | string | Chinese class name (mirrors the path for the synthetic subset). |
+| `color` | [int, int, int] | Official RGB palette colour, 0–255. |
+| `taxonomy` | object | **Synthetic only.** Three-level taxonomy `{ "level1", "level2", "level3" }`; absent levels are `null`. |
+
+Example entry (synthetic):
+
+```json
+{
+  "id": 91,
+  "name": "basic/wall/wall_cloth",
+  "name_zh": "硬装/墙面/壁布",
+  "color": [85, 126, 242],
+  "taxonomy": { "level1": "basic", "level2": "wall", "level3": "wall_cloth" }
+}
+```
+
+Loading example:
+
+```python
+import json
+m = json.load(open("metadata/class_mapping_synthetic.json", encoding="utf-8"))
+id2name  = {c["id"]: c["name"]  for c in m["classes"]}
+id2color = {c["id"]: c["color"] for c in m["classes"]}
+# group all classes under a top-level taxonomy level
+level1 = {c["taxonomy"]["level1"] for c in m["classes"]}
+```
+
+See [`../DATASET_STRUCTURE.md`](../DATASET_STRUCTURE.md) for how `segment.png` is encoded and visualized.
+
 ## Real-World Scene Statistics (1,000 Scenes)
 
 The following analysis pertains to the 1,000 professionally captured real-world residential scenes.

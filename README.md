@@ -11,7 +11,7 @@ Realsee3D is a large-scale, multi-view RGB-D dataset containing 10,000 indoor sc
 
 *   **Large Scale:** 10,000 unique indoor scenes, comprising 95,962 rooms and 299,073 viewpoints/RGB-D pairs.
 *   **Rich Data:** Panoramic RGB-D captures with complete room-level coverage.
-*   **Comprehensive Annotations:** Includes CAD drawings, floor plans, semantic segmentation, 3D detection labels and more (forthcoming).
+*   **Comprehensive Annotations:** Includes pixel-wise semantic segmentation (available for both real-world and synthetic scenes), with CAD drawings, floor plans, 3D detection labels and more (forthcoming).
 *   **Diverse Scenes:** Comprising 1,000 real-world scenes with varied layouts and decoration styles, and 9,000 procedurally generated scenes utilizing over 100 designer-curated style templates, ensuring diverse furniture models and styles for robust training and testing.
 
 ## 🗃️ Data Organization & Access
@@ -33,6 +33,7 @@ For a detailed breakdown of dataset statistics, please refer to [metadata/README
 
 ## 📋 Changelog
 
+*   **2026-06-24:** Phase II data released — per-viewpoint pixel-wise semantic segmentation (`segment.png`) for both real-world and synthetic scenes. Real-world maps are current-model predictions (not manual annotation); ground-truth annotations are planned for a future release. See [DATASET_STRUCTURE.md](DATASET_STRUCTURE.md) for details.
 *   **2025-12-05:** Phase I data(RGB-D pano and extrinsics) released.
 *   **2025-11-28:** Dataset introduction and official website release.
 

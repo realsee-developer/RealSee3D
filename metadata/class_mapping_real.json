@@ -1,0 +1,1510 @@
+{
+  "subset": "real",
+  "description": "Realsee3D semantic segmentation class mapping for the real-world subset. In segment.png each pixel value equals the class 'id'; id 0 is background / unlabeled / invalid. NOTE: real-world segment.png maps are predictions from our own trained model (not manual annotation) and may contain errors; human-verified ground-truth annotations are planned for a future release.",
+  "label_source": "model_prediction",
+  "num_classes": 150,
+  "ignore_id": 0,
+  "hierarchical": false,
+  "classes": [
+    {
+      "id": 1,
+      "name": "ceiling",
+      "name_zh": "天花板",
+      "color": [
+        242,
+        85,
+        85
+      ]
+    },
+    {
+      "id": 2,
+      "name": "floor",
+      "name_zh": "地面",
+      "color": [
+        20,
+        74,
+        204
+      ]
+    },
+    {
+      "id": 3,
+      "name": "wall",
+      "name_zh": "墙面",
+      "color": [
+        158,
+        230,
+        57
+      ]
+    },
+    {
+      "id": 4,
+      "name": "door_frame",
+      "name_zh": "门-边框",
+      "color": [
+        242,
+        85,
+        223
+      ]
+    },
+    {
+      "id": 5,
+      "name": "archway_door_opening",
+      "name_zh": "垭口-门洞",
+      "color": [
+        20,
+        204,
+        173
+      ]
+    },
+    {
+      "id": 6,
+      "name": "beam",
+      "name_zh": "房梁",
+      "color": [
+        230,
+        150,
+        57
+      ]
+    },
+    {
+      "id": 7,
+      "name": "background_wall",
+      "name_zh": "背景墙",
+      "color": [
+        124,
+        85,
+        242
+      ]
+    },
+    {
+      "id": 8,
+      "name": "stairs",
+      "name_zh": "楼梯",
+      "color": [
+        28,
+        204,
+        20
+      ]
+    },
+    {
+      "id": 9,
+      "name": "curtain",
+      "name_zh": "窗帘",
+      "color": [
+        230,
+        57,
+        115
+      ]
+    },
+    {
+      "id": 10,
+      "name": "indoor_glass",
+      "name_zh": "室内玻璃",
+      "color": [
+        85,
+        183,
+        242
+      ]
+    },
+    {
+      "id": 11,
+      "name": "exterior_window_glass",
+      "name_zh": "外墙窗玻璃",
+      "color": [
+        189,
+        204,
+        20
+      ]
+    },
+    {
+      "id": 12,
+      "name": "mirror",
+      "name_zh": "镜子",
+      "color": [
+        193,
+        57,
+        230
+      ]
+    },
+    {
+      "id": 13,
+      "name": "window_border",
+      "name_zh": "窗户框",
+      "color": [
+        85,
+        242,
+        163
+      ]
+    },
+    {
+      "id": 14,
+      "name": "door_glass_border",
+      "name_zh": "门-门玻璃边框",
+      "color": [
+        204,
+        58,
+        20
+      ]
+    },
+    {
+      "id": 15,
+      "name": "blinds",
+      "name_zh": "百叶窗",
+      "color": [
+        57,
+        72,
+        230
+      ]
+    },
+    {
+      "id": 21,
+      "name": "outdoor_ground",
+      "name_zh": "室外地面",
+      "color": [
+        144,
+        242,
+        85
+      ]
+    },
+    {
+      "id": 22,
+      "name": "outdoor_sky",
+      "name_zh": "室外天空",
+      "color": [
+        204,
+        20,
+        143
+      ]
+    },
+    {
+      "id": 23,
+      "name": "outdoor_wall",
+      "name_zh": "室外墙",
+      "color": [
+        57,
+        223,
+        230
+      ]
+    },
+    {
+      "id": 24,
+      "name": "outdoor_house_building",
+      "name_zh": "室外房屋-建筑",
+      "color": [
+        242,
+        203,
+        85
+      ]
+    },
+    {
+      "id": 25,
+      "name": "outdoor_tree",
+      "name_zh": "室外树",
+      "color": [
+        104,
+        20,
+        204
+      ]
+    },
+    {
+      "id": 26,
+      "name": "outdoor_potted_plant",
+      "name_zh": "室外盆栽-绿植",
+      "color": [
+        57,
+        230,
+        86
+      ]
+    },
+    {
+      "id": 27,
+      "name": "outdoor_grass_lawn_field",
+      "name_zh": "室外草地-草坪-田野",
+      "color": [
+        242,
+        85,
+        105
+      ]
+    },
+    {
+      "id": 28,
+      "name": "outdoor_bridge",
+      "name_zh": "室外桥梁",
+      "color": [
+        20,
+        97,
+        204
+      ]
+    },
+    {
+      "id": 29,
+      "name": "outdoor_mountain",
+      "name_zh": "室外高山",
+      "color": [
+        180,
+        230,
+        57
+      ]
+    },
+    {
+      "id": 30,
+      "name": "outdoor_hill",
+      "name_zh": "室外小山",
+      "color": [
+        242,
+        85,
+        242
+      ]
+    },
+    {
+      "id": 31,
+      "name": "outdoor_rock",
+      "name_zh": "室外石头",
+      "color": [
+        20,
+        204,
+        150
+      ]
+    },
+    {
+      "id": 32,
+      "name": "outdoor_water",
+      "name_zh": "室外水",
+      "color": [
+        230,
+        129,
+        57
+      ]
+    },
+    {
+      "id": 33,
+      "name": "outdoor_sea",
+      "name_zh": "室外海",
+      "color": [
+        104,
+        85,
+        242
+      ]
+    },
+    {
+      "id": 34,
+      "name": "outdoor_railing_fence",
+      "name_zh": "室外栏杆-篱笆",
+      "color": [
+        52,
+        204,
+        20
+      ]
+    },
+    {
+      "id": 35,
+      "name": "outdoor_sunshade_pavilion_rack",
+      "name_zh": "室外遮阳-亭子-架子",
+      "color": [
+        230,
+        57,
+        137
+      ]
+    },
+    {
+      "id": 36,
+      "name": "outdoor_table_seat",
+      "name_zh": "室外桌子-坐椅",
+      "color": [
+        85,
+        203,
+        242
+      ]
+    },
+    {
+      "id": 37,
+      "name": "outdoor_stage_stand_screen",
+      "name_zh": "室外舞台-看台-大屏幕",
+      "color": [
+        204,
+        196,
+        20
+      ]
+    },
+    {
+      "id": 38,
+      "name": "outdoor_platform_roadbed_foundation",
+      "name_zh": "室外平台-路基-地基",
+      "color": [
+        171,
+        57,
+        230
+      ]
+    },
+    {
+      "id": 39,
+      "name": "outdoor_statue_pier",
+      "name_zh": "室外雕像-墩子",
+      "color": [
+        85,
+        242,
+        143
+      ]
+    },
+    {
+      "id": 40,
+      "name": "outdoor_sign_board",
+      "name_zh": "室外立牌-板",
+      "color": [
+        204,
+        35,
+        20
+      ]
+    },
+    {
+      "id": 41,
+      "name": "outdoor_steps",
+      "name_zh": "室外阶梯",
+      "color": [
+        57,
+        94,
+        230
+      ]
+    },
+    {
+      "id": 42,
+      "name": "outdoor_lamp_pole_signal_light",
+      "name_zh": "室外灯-杆-信号灯",
+      "color": [
+        164,
+        242,
+        85
+      ]
+    },
+    {
+      "id": 43,
+      "name": "outdoor_trash_can",
+      "name_zh": "室外垃圾桶",
+      "color": [
+        204,
+        20,
+        167
+      ]
+    },
+    {
+      "id": 44,
+      "name": "outdoor_flag",
+      "name_zh": "室外旗帜",
+      "color": [
+        57,
+        230,
+        214
+      ]
+    },
+    {
+      "id": 45,
+      "name": "outdoor_animal",
+      "name_zh": "室外动物",
+      "color": [
+        242,
+        182,
+        85
+      ]
+    },
+    {
+      "id": 62,
+      "name": "swing_door",
+      "name_zh": "平开门",
+      "color": [
+        81,
+        20,
+        204
+      ]
+    },
+    {
+      "id": 63,
+      "name": "security_door",
+      "name_zh": "防盗门",
+      "color": [
+        57,
+        230,
+        64
+      ]
+    },
+    {
+      "id": 64,
+      "name": "sliding_door",
+      "name_zh": "推拉门",
+      "color": [
+        242,
+        85,
+        125
+      ]
+    },
+    {
+      "id": 65,
+      "name": "folding_door",
+      "name_zh": "折叠门",
+      "color": [
+        20,
+        121,
+        204
+      ]
+    },
+    {
+      "id": 66,
+      "name": "casement_window",
+      "name_zh": "平开窗",
+      "color": [
+        202,
+        230,
+        57
+      ]
+    },
+    {
+      "id": 67,
+      "name": "sliding_window",
+      "name_zh": "推拉窗",
+      "color": [
+        222,
+        85,
+        242
+      ]
+    },
+    {
+      "id": 68,
+      "name": "floor_to_ceiling_window",
+      "name_zh": "落地窗",
+      "color": [
+        20,
+        204,
+        126
+      ]
+    },
+    {
+      "id": 69,
+      "name": "bay_window",
+      "name_zh": "飘窗",
+      "color": [
+        230,
+        107,
+        57
+      ]
+    },
+    {
+      "id": 70,
+      "name": "ordinary_window",
+      "name_zh": "普通窗",
+      "color": [
+        85,
+        86,
+        242
+      ]
+    },
+    {
+      "id": 71,
+      "name": "bed",
+      "name_zh": "床",
+      "color": [
+        75,
+        204,
+        20
+      ]
+    },
+    {
+      "id": 72,
+      "name": "bunk_bed",
+      "name_zh": "高低床",
+      "color": [
+        230,
+        57,
+        159
+      ]
+    },
+    {
+      "id": 73,
+      "name": "crib",
+      "name_zh": "婴儿床",
+      "color": [
+        85,
+        224,
+        242
+      ]
+    },
+    {
+      "id": 74,
+      "name": "tatami",
+      "name_zh": "榻榻米",
+      "color": [
+        204,
+        172,
+        20
+      ]
+    },
+    {
+      "id": 75,
+      "name": "wardrobe",
+      "name_zh": "衣柜",
+      "color": [
+        149,
+        57,
+        230
+      ]
+    },
+    {
+      "id": 76,
+      "name": "shoe_rack",
+      "name_zh": "鞋架",
+      "color": [
+        85,
+        242,
+        123
+      ]
+    },
+    {
+      "id": 77,
+      "name": "bookcase",
+      "name_zh": "书柜",
+      "color": [
+        204,
+        20,
+        29
+      ]
+    },
+    {
+      "id": 78,
+      "name": "wine_cabinet_rack",
+      "name_zh": "酒柜-酒架",
+      "color": [
+        57,
+        116,
+        230
+      ]
+    },
+    {
+      "id": 79,
+      "name": "coat_rack",
+      "name_zh": "衣帽架",
+      "color": [
+        184,
+        242,
+        85
+      ]
+    },
+    {
+      "id": 80,
+      "name": "towel_rack",
+      "name_zh": "毛巾架",
+      "color": [
+        204,
+        20,
+        190
+      ]
+    },
+    {
+      "id": 81,
+      "name": "decorative_shelf_flower_stand",
+      "name_zh": "装饰架-花架",
+      "color": [
+        57,
+        230,
+        192
+      ]
+    },
+    {
+      "id": 82,
+      "name": "wall_cabinet_shelf_niche",
+      "name_zh": "壁柜层板-凹龛",
+      "color": [
+        242,
+        162,
+        85
+      ]
+    },
+    {
+      "id": 83,
+      "name": "plant_stand",
+      "name_zh": "植物架",
+      "color": [
+        57,
+        20,
+        204
+      ]
+    },
+    {
+      "id": 84,
+      "name": "tv_cabinet",
+      "name_zh": "电视柜",
+      "color": [
+        73,
+        230,
+        57
+      ]
+    },
+    {
+      "id": 85,
+      "name": "sideboard",
+      "name_zh": "餐边柜",
+      "color": [
+        242,
+        85,
+        145
+      ]
+    },
+    {
+      "id": 86,
+      "name": "hallway_cabinet",
+      "name_zh": "玄关柜",
+      "color": [
+        20,
+        144,
+        204
+      ]
+    },
+    {
+      "id": 87,
+      "name": "kitchen_cabinet",
+      "name_zh": "橱柜",
+      "color": [
+        224,
+        230,
+        57
+      ]
+    },
+    {
+      "id": 88,
+      "name": "bathroom_cabinet",
+      "name_zh": "浴室柜",
+      "color": [
+        202,
+        85,
+        242
+      ]
+    },
+    {
+      "id": 89,
+      "name": "cabinet",
+      "name_zh": "柜子",
+      "color": [
+        20,
+        204,
+        103
+      ]
+    },
+    {
+      "id": 90,
+      "name": "bedside_table",
+      "name_zh": "床头柜",
+      "color": [
+        230,
+        85,
+        57
+      ]
+    },
+    {
+      "id": 91,
+      "name": "sofa",
+      "name_zh": "沙发",
+      "color": [
+        85,
+        106,
+        242
+      ]
+    },
+    {
+      "id": 92,
+      "name": "chaise_longue",
+      "name_zh": "贵妃榻",
+      "color": [
+        99,
+        204,
+        20
+      ]
+    },
+    {
+      "id": 93,
+      "name": "dining_chair",
+      "name_zh": "餐椅",
+      "color": [
+        230,
+        57,
+        181
+      ]
+    },
+    {
+      "id": 94,
+      "name": "massage_chair",
+      "name_zh": "按摩椅",
+      "color": [
+        85,
+        242,
+        241
+      ]
+    },
+    {
+      "id": 95,
+      "name": "booth_seat",
+      "name_zh": "卡座",
+      "color": [
+        204,
+        149,
+        20
+      ]
+    },
+    {
+      "id": 96,
+      "name": "bar_chair",
+      "name_zh": "吧椅",
+      "color": [
+        127,
+        57,
+        230
+      ]
+    },
+    {
+      "id": 97,
+      "name": "chair",
+      "name_zh": "椅子",
+      "color": [
+        85,
+        242,
+        103
+      ]
+    },
+    {
+      "id": 98,
+      "name": "stool",
+      "name_zh": "凳子",
+      "color": [
+        204,
+        20,
+        53
+      ]
+    },
+    {
+      "id": 99,
+      "name": "coffee_table",
+      "name_zh": "茶几",
+      "color": [
+        57,
+        138,
+        230
+      ]
+    },
+    {
+      "id": 100,
+      "name": "dining_table",
+      "name_zh": "餐桌",
+      "color": [
+        204,
+        242,
+        85
+      ]
+    },
+    {
+      "id": 101,
+      "name": "desk",
+      "name_zh": "书桌",
+      "color": [
+        194,
+        20,
+        204
+      ]
+    },
+    {
+      "id": 102,
+      "name": "dressing_table",
+      "name_zh": "梳妆台",
+      "color": [
+        57,
+        230,
+        170
+      ]
+    },
+    {
+      "id": 103,
+      "name": "mahjong_table",
+      "name_zh": "麻将桌",
+      "color": [
+        242,
+        142,
+        85
+      ]
+    },
+    {
+      "id": 104,
+      "name": "table",
+      "name_zh": "桌子",
+      "color": [
+        34,
+        20,
+        204
+      ]
+    },
+    {
+      "id": 105,
+      "name": "bar_counter",
+      "name_zh": "吧台",
+      "color": [
+        95,
+        230,
+        57
+      ]
+    },
+    {
+      "id": 106,
+      "name": "television",
+      "name_zh": "电视",
+      "color": [
+        242,
+        85,
+        165
+      ]
+    },
+    {
+      "id": 107,
+      "name": "washing_machine",
+      "name_zh": "洗衣机",
+      "color": [
+        20,
+        168,
+        204
+      ]
+    },
+    {
+      "id": 108,
+      "name": "refrigerator",
+      "name_zh": "冰箱",
+      "color": [
+        230,
+        213,
+        57
+      ]
+    },
+    {
+      "id": 109,
+      "name": "floor_air_conditioner",
+      "name_zh": "立式空调",
+      "color": [
+        181,
+        85,
+        242
+      ]
+    },
+    {
+      "id": 110,
+      "name": "wall_air_conditioner",
+      "name_zh": "挂式空调",
+      "color": [
+        20,
+        204,
+        80
+      ]
+    },
+    {
+      "id": 111,
+      "name": "central_air_conditioner",
+      "name_zh": "中央空调",
+      "color": [
+        230,
+        63,
+        57
+      ]
+    },
+    {
+      "id": 112,
+      "name": "water_dispenser",
+      "name_zh": "饮水机",
+      "color": [
+        85,
+        126,
+        242
+      ]
+    },
+    {
+      "id": 113,
+      "name": "clock",
+      "name_zh": "钟表",
+      "color": [
+        122,
+        204,
+        20
+      ]
+    },
+    {
+      "id": 114,
+      "name": "electric_water_heater",
+      "name_zh": "电热水器",
+      "color": [
+        230,
+        57,
+        203
+      ]
+    },
+    {
+      "id": 115,
+      "name": "gas_water_heater",
+      "name_zh": "燃气热水器",
+      "color": [
+        85,
+        242,
+        221
+      ]
+    },
+    {
+      "id": 116,
+      "name": "bath_heater",
+      "name_zh": "浴霸",
+      "color": [
+        204,
+        125,
+        20
+      ]
+    },
+    {
+      "id": 117,
+      "name": "cooker_hood",
+      "name_zh": "吸油烟机",
+      "color": [
+        105,
+        57,
+        230
+      ]
+    },
+    {
+      "id": 118,
+      "name": "gas_stove",
+      "name_zh": "燃气灶",
+      "color": [
+        87,
+        242,
+        85
+      ]
+    },
+    {
+      "id": 119,
+      "name": "microwave_oven",
+      "name_zh": "微波炉",
+      "color": [
+        204,
+        20,
+        76
+      ]
+    },
+    {
+      "id": 120,
+      "name": "oven",
+      "name_zh": "烤箱",
+      "color": [
+        57,
+        160,
+        230
+      ]
+    },
+    {
+      "id": 121,
+      "name": "dishwasher",
+      "name_zh": "洗碗机",
+      "color": [
+        225,
+        242,
+        85
+      ]
+    },
+    {
+      "id": 122,
+      "name": "disinfection_cabinet",
+      "name_zh": "消毒柜",
+      "color": [
+        171,
+        20,
+        204
+      ]
+    },
+    {
+      "id": 123,
+      "name": "water_purifier",
+      "name_zh": "净水器",
+      "color": [
+        57,
+        230,
+        148
+      ]
+    },
+    {
+      "id": 124,
+      "name": "embedded_appliance",
+      "name_zh": "嵌入式家电",
+      "color": [
+        242,
+        122,
+        85
+      ]
+    },
+    {
+      "id": 125,
+      "name": "pot",
+      "name_zh": "锅",
+      "color": [
+        20,
+        30,
+        204
+      ]
+    },
+    {
+      "id": 126,
+      "name": "induction_ceramic_cooker",
+      "name_zh": "电磁炉-电陶炉",
+      "color": [
+        117,
+        230,
+        57
+      ]
+    },
+    {
+      "id": 127,
+      "name": "electric_fan",
+      "name_zh": "电扇",
+      "color": [
+        242,
+        85,
+        185
+      ]
+    },
+    {
+      "id": 128,
+      "name": "computer",
+      "name_zh": "电脑",
+      "color": [
+        20,
+        191,
+        204
+      ]
+    },
+    {
+      "id": 129,
+      "name": "space_heater",
+      "name_zh": "取暖器",
+      "color": [
+        230,
+        191,
+        57
+      ]
+    },
+    {
+      "id": 130,
+      "name": "speaker",
+      "name_zh": "音箱",
+      "color": [
+        161,
+        85,
+        242
+      ]
+    },
+    {
+      "id": 131,
+      "name": "router",
+      "name_zh": "路由器",
+      "color": [
+        20,
+        204,
+        56
+      ]
+    },
+    {
+      "id": 132,
+      "name": "other_appliances",
+      "name_zh": "其他家电",
+      "color": [
+        230,
+        57,
+        74
+      ]
+    },
+    {
+      "id": 133,
+      "name": "lamp",
+      "name_zh": "灯",
+      "color": [
+        85,
+        146,
+        242
+      ]
+    },
+    {
+      "id": 134,
+      "name": "washbasin",
+      "name_zh": "洗手盆",
+      "color": [
+        145,
+        204,
+        20
+      ]
+    },
+    {
+      "id": 135,
+      "name": "kitchen_sink",
+      "name_zh": "厨房水池",
+      "color": [
+        230,
+        57,
+        225
+      ]
+    },
+    {
+      "id": 136,
+      "name": "mop_sink",
+      "name_zh": "拖把池",
+      "color": [
+        85,
+        242,
+        201
+      ]
+    },
+    {
+      "id": 137,
+      "name": "toilet",
+      "name_zh": "马桶",
+      "color": [
+        204,
+        102,
+        20
+      ]
+    },
+    {
+      "id": 138,
+      "name": "squat_toilet",
+      "name_zh": "蹲坑",
+      "color": [
+        83,
+        57,
+        230
+      ]
+    },
+    {
+      "id": 139,
+      "name": "shower_head",
+      "name_zh": "花洒",
+      "color": [
+        107,
+        242,
+        85
+      ]
+    },
+    {
+      "id": 140,
+      "name": "bathtub",
+      "name_zh": "浴缸",
+      "color": [
+        204,
+        20,
+        100
+      ]
+    },
+    {
+      "id": 141,
+      "name": "shower_room",
+      "name_zh": "淋浴房",
+      "color": [
+        57,
+        182,
+        230
+      ]
+    },
+    {
+      "id": 142,
+      "name": "curtain",
+      "name_zh": "帘子",
+      "color": [
+        242,
+        240,
+        85
+      ]
+    },
+    {
+      "id": 143,
+      "name": "carpet",
+      "name_zh": "地毯",
+      "color": [
+        148,
+        20,
+        204
+      ]
+    },
+    {
+      "id": 144,
+      "name": "decorative_painting",
+      "name_zh": "装饰画-风景照-十字贴画",
+      "color": [
+        57,
+        230,
+        126
+      ]
+    },
+    {
+      "id": 145,
+      "name": "photo",
+      "name_zh": "照片",
+      "color": [
+        242,
+        102,
+        85
+      ]
+    },
+    {
+      "id": 146,
+      "name": "fu_character_couplet",
+      "name_zh": "福字-对联",
+      "color": [
+        20,
+        54,
+        204
+      ]
+    },
+    {
+      "id": 147,
+      "name": "drying_facility",
+      "name_zh": "晾晒设施",
+      "color": [
+        139,
+        230,
+        57
+      ]
+    },
+    {
+      "id": 148,
+      "name": "radiator",
+      "name_zh": "暖气片",
+      "color": [
+        242,
+        85,
+        205
+      ]
+    },
+    {
+      "id": 149,
+      "name": "indoor_plant",
+      "name_zh": "室内绿植",
+      "color": [
+        20,
+        204,
+        193
+      ]
+    },
+    {
+      "id": 150,
+      "name": "trash_can",
+      "name_zh": "垃圾桶",
+      "color": [
+        230,
+        169,
+        57
+      ]
+    },
+    {
+      "id": 151,
+      "name": "screen_partition",
+      "name_zh": "屏风隔断",
+      "color": [
+        141,
+        85,
+        242
+      ]
+    },
+    {
+      "id": 152,
+      "name": "fitness_equipment",
+      "name_zh": "健身器材",
+      "color": [
+        20,
+        204,
+        33
+      ]
+    },
+    {
+      "id": 153,
+      "name": "upright_grand_piano",
+      "name_zh": "立式-三角钢琴",
+      "color": [
+        230,
+        57,
+        96
+      ]
+    },
+    {
+      "id": 154,
+      "name": "electric_piano_keyboard_guzheng",
+      "name_zh": "电钢琴-电子琴-古筝",
+      "color": [
+        85,
+        166,
+        242
+      ]
+    },
+    {
+      "id": 155,
+      "name": "pet_supplies",
+      "name_zh": "宠物用品",
+      "color": [
+        169,
+        204,
+        20
+      ]
+    },
+    {
+      "id": 156,
+      "name": "fish_tank_trough",
+      "name_zh": "鱼缸-槽缸",
+      "color": [
+        212,
+        57,
+        230
+      ]
+    },
+    {
+      "id": 157,
+      "name": "sundries",
+      "name_zh": "杂物",
+      "color": [
+        85,
+        242,
+        180
+      ]
+    },
+    {
+      "id": 158,
+      "name": "radiator_cover",
+      "name_zh": "暖气柜架",
+      "color": [
+        204,
+        78,
+        20
+      ]
+    },
+    {
+      "id": 159,
+      "name": "washing_machine_cabinet",
+      "name_zh": "洗衣机柜",
+      "color": [
+        61,
+        57,
+        230
+      ]
+    },
+    {
+      "id": 160,
+      "name": "humidifier",
+      "name_zh": "加湿器",
+      "color": [
+        127,
+        242,
+        85
+      ]
+    },
+    {
+      "id": 161,
+      "name": "air_purifier",
+      "name_zh": "空气净化器",
+      "color": [
+        204,
+        20,
+        123
+      ]
+    },
+    {
+      "id": 162,
+      "name": "toy",
+      "name_zh": "玩具",
+      "color": [
+        57,
+        204,
+        230
+      ]
+    },
+    {
+      "id": 163,
+      "name": "baby_stroller",
+      "name_zh": "婴童车",
+      "color": [
+        242,
+        220,
+        85
+      ]
+    },
+    {
+      "id": 164,
+      "name": "warning_sign",
+      "name_zh": "警示牌",
+      "color": [
+        124,
+        20,
+        204
+      ]
+    },
+    {
+      "id": 191,
+      "name": "person",
+      "name_zh": "人",
+      "color": [
+        57,
+        230,
+        104
+      ]
+    },
+    {
+      "id": 192,
+      "name": "bicycle",
+      "name_zh": "自行车",
+      "color": [
+        242,
+        85,
+        88
+      ]
+    },
+    {
+      "id": 193,
+      "name": "car",
+      "name_zh": "轿车",
+      "color": [
+        20,
+        77,
+        204
+      ]
+    },
+    {
+      "id": 194,
+      "name": "motorcycle",
+      "name_zh": "摩托车",
+      "color": [
+        161,
+        230,
+        57
+      ]
+    },
+    {
+      "id": 195,
+      "name": "airplane",
+      "name_zh": "飞机",
+      "color": [
+        242,
+        85,
+        226
+      ]
+    },
+    {
+      "id": 196,
+      "name": "bus",
+      "name_zh": "公共汽车",
+      "color": [
+        20,
+        204,
+        170
+      ]
+    },
+    {
+      "id": 197,
+      "name": "truck",
+      "name_zh": "卡车",
+      "color": [
+        230,
+        147,
+        57
+      ]
+    }
+  ]
+}

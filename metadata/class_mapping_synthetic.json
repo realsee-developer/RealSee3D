@@ -1,0 +1,3145 @@
+{
+  "subset": "synthetic",
+  "description": "Realsee3D semantic segmentation class mapping for the procedurally generated (synthetic) subset. In segment.png each pixel value equals the class 'id'; id 0 is background / unlabeled / invalid. Synthetic maps are exact labels rendered from the scene definition.",
+  "label_source": "rendered_ground_truth",
+  "num_classes": 209,
+  "ignore_id": 0,
+  "hierarchical": true,
+  "classes": [
+    {
+      "id": 1,
+      "name": "furniture/sofa/armchair",
+      "name_zh": "家具/沙发/单人沙发",
+      "color": [
+        242,
+        85,
+        85
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "sofa",
+        "level3": "armchair"
+      }
+    },
+    {
+      "id": 2,
+      "name": "furniture/sofa/sofa_bed",
+      "name_zh": "家具/沙发/贵妃榻",
+      "color": [
+        20,
+        74,
+        204
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "sofa",
+        "level3": "sofa_bed"
+      }
+    },
+    {
+      "id": 3,
+      "name": "furniture/sofa/siamesed_sofa",
+      "name_zh": "家具/沙发/多人沙发",
+      "color": [
+        158,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "sofa",
+        "level3": "siamesed_sofa"
+      }
+    },
+    {
+      "id": 4,
+      "name": "furniture/sofa/sectional_sofa",
+      "name_zh": "家具/沙发/组合沙发",
+      "color": [
+        242,
+        85,
+        223
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "sofa",
+        "level3": "sectional_sofa"
+      }
+    },
+    {
+      "id": 5,
+      "name": "furniture/sofa/sofa_stool",
+      "name_zh": "家具/沙发/沙发凳",
+      "color": [
+        20,
+        204,
+        173
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "sofa",
+        "level3": "sofa_stool"
+      }
+    },
+    {
+      "id": 6,
+      "name": "furniture/sofa/lazy_sofa",
+      "name_zh": "家具/沙发/懒人沙发",
+      "color": [
+        230,
+        150,
+        57
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "sofa",
+        "level3": "lazy_sofa"
+      }
+    },
+    {
+      "id": 7,
+      "name": "furniture/bed/normal_bed",
+      "name_zh": "家具/床/床",
+      "color": [
+        124,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "bed",
+        "level3": "normal_bed"
+      }
+    },
+    {
+      "id": 8,
+      "name": "furniture/bed/bunk_bed",
+      "name_zh": "家具/床/高低床",
+      "color": [
+        28,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "bed",
+        "level3": "bunk_bed"
+      }
+    },
+    {
+      "id": 9,
+      "name": "furniture/bed/tatami",
+      "name_zh": "家具/床/榻榻米",
+      "color": [
+        230,
+        57,
+        115
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "bed",
+        "level3": "tatami"
+      }
+    },
+    {
+      "id": 10,
+      "name": "furniture/bed/children_bed",
+      "name_zh": "家具/床/儿童床",
+      "color": [
+        85,
+        183,
+        242
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "bed",
+        "level3": "children_bed"
+      }
+    },
+    {
+      "id": 11,
+      "name": "furniture/bed/cot",
+      "name_zh": "家具/床/婴儿床",
+      "color": [
+        189,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "bed",
+        "level3": "cot"
+      }
+    },
+    {
+      "id": 12,
+      "name": "furniture/table/dining_set",
+      "name_zh": "家具/桌几/餐桌椅组合",
+      "color": [
+        193,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "table",
+        "level3": "dining_set"
+      }
+    },
+    {
+      "id": 13,
+      "name": "furniture/table/dining_table",
+      "name_zh": "家具/桌几/餐桌",
+      "color": [
+        85,
+        242,
+        163
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "table",
+        "level3": "dining_table"
+      }
+    },
+    {
+      "id": 14,
+      "name": "furniture/table/desk",
+      "name_zh": "家具/桌几/书桌",
+      "color": [
+        204,
+        58,
+        20
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "table",
+        "level3": "desk"
+      }
+    },
+    {
+      "id": 15,
+      "name": "furniture/table/desk_with_add_on_unit",
+      "name_zh": "家具/桌几/边桌",
+      "color": [
+        57,
+        72,
+        230
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "table",
+        "level3": "desk_with_add_on_unit"
+      }
+    },
+    {
+      "id": 16,
+      "name": "furniture/table",
+      "name_zh": "家具/桌几",
+      "color": [
+        144,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "table",
+        "level3": null
+      }
+    },
+    {
+      "id": 17,
+      "name": "furniture/table/dressing_table",
+      "name_zh": "家具/桌几/梳妆台",
+      "color": [
+        204,
+        20,
+        143
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "table",
+        "level3": "dressing_table"
+      }
+    },
+    {
+      "id": 18,
+      "name": "furniture/table/coffee_table",
+      "name_zh": "家具/桌几/茶几",
+      "color": [
+        57,
+        223,
+        230
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "table",
+        "level3": "coffee_table"
+      }
+    },
+    {
+      "id": 19,
+      "name": "furniture/table/side_table",
+      "name_zh": "家具/桌几/边几",
+      "color": [
+        242,
+        203,
+        85
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "table",
+        "level3": "side_table"
+      }
+    },
+    {
+      "id": 20,
+      "name": "furniture/table/bar_table",
+      "name_zh": "家具/桌几/吧台",
+      "color": [
+        104,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "table",
+        "level3": "bar_table"
+      }
+    },
+    {
+      "id": 21,
+      "name": "furniture/chair/dining_chair",
+      "name_zh": "家具/椅凳/餐椅",
+      "color": [
+        57,
+        230,
+        86
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "chair",
+        "level3": "dining_chair"
+      }
+    },
+    {
+      "id": 22,
+      "name": "furniture/chair/cassette",
+      "name_zh": "家具/椅凳/卡座",
+      "color": [
+        242,
+        85,
+        105
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "chair",
+        "level3": "cassette"
+      }
+    },
+    {
+      "id": 23,
+      "name": "furniture/chair/swivel_chair",
+      "name_zh": "家具/椅凳/转椅",
+      "color": [
+        20,
+        97,
+        204
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "chair",
+        "level3": "swivel_chair"
+      }
+    },
+    {
+      "id": 24,
+      "name": "furniture/chair/folding_chair",
+      "name_zh": "家具/椅凳/折叠椅",
+      "color": [
+        180,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "chair",
+        "level3": "folding_chair"
+      }
+    },
+    {
+      "id": 25,
+      "name": "furniture/chair/reclining_chair",
+      "name_zh": "家具/椅凳/躺椅",
+      "color": [
+        242,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "chair",
+        "level3": "reclining_chair"
+      }
+    },
+    {
+      "id": 26,
+      "name": "furniture/chair/bedstock_stool",
+      "name_zh": "家具/椅凳/床尾凳",
+      "color": [
+        20,
+        204,
+        150
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "chair",
+        "level3": "bedstock_stool"
+      }
+    },
+    {
+      "id": 27,
+      "name": "furniture/chair/stool",
+      "name_zh": "家具/椅凳/凳",
+      "color": [
+        230,
+        129,
+        57
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "chair",
+        "level3": "stool"
+      }
+    },
+    {
+      "id": 28,
+      "name": "furniture/chair/bar_chair",
+      "name_zh": "家具/椅凳/吧椅",
+      "color": [
+        104,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "chair",
+        "level3": "bar_chair"
+      }
+    },
+    {
+      "id": 29,
+      "name": "furniture/cabinet/beside_table",
+      "name_zh": "家具/柜架/床头柜",
+      "color": [
+        52,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "beside_table"
+      }
+    },
+    {
+      "id": 30,
+      "name": "furniture/cabinet/tv_bench",
+      "name_zh": "家具/柜架/电视柜",
+      "color": [
+        230,
+        57,
+        137
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "tv_bench"
+      }
+    },
+    {
+      "id": 31,
+      "name": "furniture/cabinet/wardrobe_accessories",
+      "name_zh": "家具/柜架/衣柜配件",
+      "color": [
+        85,
+        203,
+        242
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "wardrobe_accessories"
+      }
+    },
+    {
+      "id": 32,
+      "name": "furniture/cabinet/wardrobe",
+      "name_zh": "家具/柜架/衣柜",
+      "color": [
+        204,
+        196,
+        20
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "wardrobe"
+      }
+    },
+    {
+      "id": 33,
+      "name": "furniture/cabinet/drawer_unit",
+      "name_zh": "家具/柜架/斗柜",
+      "color": [
+        171,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "drawer_unit"
+      }
+    },
+    {
+      "id": 34,
+      "name": "furniture/cabinet/bookcase",
+      "name_zh": "家具/柜架/书架",
+      "color": [
+        85,
+        242,
+        143
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "bookcase"
+      }
+    },
+    {
+      "id": 35,
+      "name": "furniture/cabinet/hallway_sideboard",
+      "name_zh": "家具/柜架/玄关柜",
+      "color": [
+        204,
+        35,
+        20
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "hallway_sideboard"
+      }
+    },
+    {
+      "id": 36,
+      "name": "furniture/cabinet/sideboard",
+      "name_zh": "家具/柜架/餐边柜",
+      "color": [
+        57,
+        94,
+        230
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "sideboard"
+      }
+    },
+    {
+      "id": 37,
+      "name": "furniture/cabinet/wine_cooler",
+      "name_zh": "家具/柜架/酒柜",
+      "color": [
+        164,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "wine_cooler"
+      }
+    },
+    {
+      "id": 38,
+      "name": "furniture/cabinet/shoe_cabinet",
+      "name_zh": "家具/柜架/鞋柜",
+      "color": [
+        204,
+        20,
+        167
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "shoe_cabinet"
+      }
+    },
+    {
+      "id": 39,
+      "name": "furniture/cabinet/flower_stand",
+      "name_zh": "家具/柜架/花架",
+      "color": [
+        57,
+        230,
+        214
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "flower_stand"
+      }
+    },
+    {
+      "id": 40,
+      "name": "furniture/cabinet/decorative_shelf",
+      "name_zh": "家具/柜架/装饰架",
+      "color": [
+        242,
+        182,
+        85
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "decorative_shelf"
+      }
+    },
+    {
+      "id": 41,
+      "name": "furniture/cabinet/coat_rack",
+      "name_zh": "家具/柜架/衣帽架",
+      "color": [
+        81,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "coat_rack"
+      }
+    },
+    {
+      "id": 42,
+      "name": "furniture/cabinet/cabinet_layer",
+      "name_zh": "家具/柜架/壁柜层板",
+      "color": [
+        57,
+        230,
+        64
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "cabinet",
+        "level3": "cabinet_layer"
+      }
+    },
+    {
+      "id": 43,
+      "name": "furniture/outdoor/outdoor_seats",
+      "name_zh": "家具/户外/户外座椅",
+      "color": [
+        242,
+        85,
+        125
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "outdoor",
+        "level3": "outdoor_seats"
+      }
+    },
+    {
+      "id": 44,
+      "name": "furniture/outdoor/outdoor_table",
+      "name_zh": "家具/户外/户外桌子",
+      "color": [
+        20,
+        121,
+        204
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "outdoor",
+        "level3": "outdoor_table"
+      }
+    },
+    {
+      "id": 45,
+      "name": "furniture/outdoor/sun_loungers",
+      "name_zh": "家具/户外/户外躺椅",
+      "color": [
+        202,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "outdoor",
+        "level3": "sun_loungers"
+      }
+    },
+    {
+      "id": 46,
+      "name": "furniture/outdoor/swing",
+      "name_zh": "家具/户外/秋千",
+      "color": [
+        222,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "outdoor",
+        "level3": "swing"
+      }
+    },
+    {
+      "id": 47,
+      "name": "furniture/outdoor/outdoor_others",
+      "name_zh": "家具/户外/其他",
+      "color": [
+        20,
+        204,
+        126
+      ],
+      "taxonomy": {
+        "level1": "furniture",
+        "level2": "outdoor",
+        "level3": "outdoor_others"
+      }
+    },
+    {
+      "id": 48,
+      "name": "children_furniture/children_bed_2/children_bed_3",
+      "name_zh": "儿童家具/儿童床/单床",
+      "color": [
+        230,
+        107,
+        57
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_bed_2",
+        "level3": "children_bed_3"
+      }
+    },
+    {
+      "id": 49,
+      "name": "children_furniture/children_bed_2/cot_3",
+      "name_zh": "儿童家具/儿童床/婴儿床",
+      "color": [
+        85,
+        86,
+        242
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_bed_2",
+        "level3": "cot_3"
+      }
+    },
+    {
+      "id": 50,
+      "name": "children_furniture/children_bed_2/bunk_bed_3",
+      "name_zh": "儿童家具/儿童床/高低床",
+      "color": [
+        75,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_bed_2",
+        "level3": "bunk_bed_3"
+      }
+    },
+    {
+      "id": 51,
+      "name": "children_furniture/children_bed_2/combination_bed",
+      "name_zh": "儿童家具/儿童床/组合床",
+      "color": [
+        230,
+        57,
+        159
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_bed_2",
+        "level3": "combination_bed"
+      }
+    },
+    {
+      "id": 52,
+      "name": "children_furniture/children_tables_chairs/table_3",
+      "name_zh": "儿童家具/儿童桌椅/桌",
+      "color": [
+        85,
+        224,
+        242
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_tables_chairs",
+        "level3": "table_3"
+      }
+    },
+    {
+      "id": 53,
+      "name": "children_furniture/children_tables_chairs/chair_3",
+      "name_zh": "儿童家具/儿童桌椅/椅",
+      "color": [
+        204,
+        172,
+        20
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_tables_chairs",
+        "level3": "chair_3"
+      }
+    },
+    {
+      "id": 54,
+      "name": "children_furniture/children_tables_chairs/desk_and_chair_combination_3",
+      "name_zh": "儿童家具/儿童桌椅/书桌椅组合",
+      "color": [
+        149,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_tables_chairs",
+        "level3": "desk_and_chair_combination_3"
+      }
+    },
+    {
+      "id": 55,
+      "name": "children_furniture/children_tables_chairs/dressing_table_3",
+      "name_zh": "儿童家具/儿童桌椅/梳妆台",
+      "color": [
+        85,
+        242,
+        123
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_tables_chairs",
+        "level3": "dressing_table_3"
+      }
+    },
+    {
+      "id": 56,
+      "name": "children_furniture/children_cabinet/beside_table_3",
+      "name_zh": "儿童家具/儿童柜类/床头柜",
+      "color": [
+        204,
+        20,
+        29
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_cabinet",
+        "level3": "beside_table_3"
+      }
+    },
+    {
+      "id": 57,
+      "name": "children_furniture/children_cabinet/wardrobe_3",
+      "name_zh": "儿童家具/儿童柜类/衣柜",
+      "color": [
+        57,
+        116,
+        230
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_cabinet",
+        "level3": "wardrobe_3"
+      }
+    },
+    {
+      "id": 58,
+      "name": "children_furniture/children_cabinet/bookcase_3",
+      "name_zh": "儿童家具/儿童柜类/书柜",
+      "color": [
+        184,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_cabinet",
+        "level3": "bookcase_3"
+      }
+    },
+    {
+      "id": 59,
+      "name": "children_furniture/children_cabinet/drawer_unit_3",
+      "name_zh": "儿童家具/儿童柜类/斗柜",
+      "color": [
+        204,
+        20,
+        190
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_cabinet",
+        "level3": "drawer_unit_3"
+      }
+    },
+    {
+      "id": 60,
+      "name": "children_furniture/children_cabinet/locker_3",
+      "name_zh": "儿童家具/儿童柜类/储物柜",
+      "color": [
+        57,
+        230,
+        192
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_cabinet",
+        "level3": "locker_3"
+      }
+    },
+    {
+      "id": 61,
+      "name": "children_furniture/children_shelves/storage_rack_3",
+      "name_zh": "儿童家具/儿童架类/储物架",
+      "color": [
+        242,
+        162,
+        85
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_shelves",
+        "level3": "storage_rack_3"
+      }
+    },
+    {
+      "id": 62,
+      "name": "children_furniture/children_shelves/clothes_stand_3",
+      "name_zh": "儿童家具/儿童架类/衣架",
+      "color": [
+        57,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_shelves",
+        "level3": "clothes_stand_3"
+      }
+    },
+    {
+      "id": 63,
+      "name": "children_furniture/children_accessories/soft_accessories_3",
+      "name_zh": "儿童家具/儿童饰品/软装配饰",
+      "color": [
+        73,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_accessories",
+        "level3": "soft_accessories_3"
+      }
+    },
+    {
+      "id": 64,
+      "name": "children_furniture/children_accessories/toys_3",
+      "name_zh": "儿童家具/儿童饰品/玩具",
+      "color": [
+        242,
+        85,
+        145
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_accessories",
+        "level3": "toys_3"
+      }
+    },
+    {
+      "id": 65,
+      "name": "children_furniture/children_accessories/literary_form_3",
+      "name_zh": "儿童家具/儿童饰品/文体",
+      "color": [
+        20,
+        144,
+        204
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_accessories",
+        "level3": "literary_form_3"
+      }
+    },
+    {
+      "id": 66,
+      "name": "children_furniture/children_accessories/tableware_3",
+      "name_zh": "儿童家具/儿童饰品/摆件",
+      "color": [
+        224,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_accessories",
+        "level3": "tableware_3"
+      }
+    },
+    {
+      "id": 67,
+      "name": "children_furniture/children_accessories/pendant_3",
+      "name_zh": "儿童家具/儿童饰品/挂件",
+      "color": [
+        202,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_accessories",
+        "level3": "pendant_3"
+      }
+    },
+    {
+      "id": 68,
+      "name": "children_furniture/children_accessories/others_13",
+      "name_zh": "儿童家具/儿童饰品/其他",
+      "color": [
+        20,
+        204,
+        103
+      ],
+      "taxonomy": {
+        "level1": "children_furniture",
+        "level2": "children_accessories",
+        "level3": "others_13"
+      }
+    },
+    {
+      "id": 69,
+      "name": "basic/door/security_door",
+      "name_zh": "硬装/门/防盗门",
+      "color": [
+        230,
+        85,
+        57
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "door",
+        "level3": "security_door"
+      }
+    },
+    {
+      "id": 70,
+      "name": "basic/door/sliding_door",
+      "name_zh": "硬装/门/推拉门",
+      "color": [
+        85,
+        106,
+        242
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "door",
+        "level3": "sliding_door"
+      }
+    },
+    {
+      "id": 71,
+      "name": "basic/door/folding_door",
+      "name_zh": "硬装/门/折叠门",
+      "color": [
+        99,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "door",
+        "level3": "folding_door"
+      }
+    },
+    {
+      "id": 72,
+      "name": "basic/door/swing_door",
+      "name_zh": "硬装/门/平开门",
+      "color": [
+        230,
+        57,
+        181
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "door",
+        "level3": "swing_door"
+      }
+    },
+    {
+      "id": 73,
+      "name": "basic/door/pass",
+      "name_zh": "硬装/门/垭口",
+      "color": [
+        85,
+        242,
+        241
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "door",
+        "level3": "pass"
+      }
+    },
+    {
+      "id": 74,
+      "name": "basic/ground/brick",
+      "name_zh": "硬装/地面/地砖",
+      "color": [
+        204,
+        149,
+        20
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "ground",
+        "level3": "brick"
+      }
+    },
+    {
+      "id": 75,
+      "name": "basic/ground/self_leveling",
+      "name_zh": "硬装/地面/自流平",
+      "color": [
+        127,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "ground",
+        "level3": "self_leveling"
+      }
+    },
+    {
+      "id": 76,
+      "name": "basic/ground/floor",
+      "name_zh": "硬装/地面/地板",
+      "color": [
+        85,
+        242,
+        103
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "ground",
+        "level3": "floor"
+      }
+    },
+    {
+      "id": 77,
+      "name": "basic/ground/cork_flooring",
+      "name_zh": "硬装/地面/软木地板",
+      "color": [
+        204,
+        20,
+        53
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "ground",
+        "level3": "cork_flooring"
+      }
+    },
+    {
+      "id": 78,
+      "name": "basic/ground/the_parquet_floor",
+      "name_zh": "硬装/地面/拼花地板",
+      "color": [
+        57,
+        138,
+        230
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "ground",
+        "level3": "the_parquet_floor"
+      }
+    },
+    {
+      "id": 79,
+      "name": "basic/ground/full_of_carpet",
+      "name_zh": "硬装/地面/满铺地毯",
+      "color": [
+        204,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "ground",
+        "level3": "full_of_carpet"
+      }
+    },
+    {
+      "id": 80,
+      "name": "basic/top_wall/finished_ceiling",
+      "name_zh": "硬装/顶面/成品吊顶",
+      "color": [
+        194,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "top_wall",
+        "level3": "finished_ceiling"
+      }
+    },
+    {
+      "id": 81,
+      "name": "basic/top_wall/ceiling",
+      "name_zh": "硬装/顶面/铝扣板吊顶",
+      "color": [
+        57,
+        230,
+        170
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "top_wall",
+        "level3": "ceiling"
+      }
+    },
+    {
+      "id": 82,
+      "name": "basic/top_wall/lamp_plate",
+      "name_zh": "硬装/顶面/灯盘",
+      "color": [
+        242,
+        142,
+        85
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "top_wall",
+        "level3": "lamp_plate"
+      }
+    },
+    {
+      "id": 83,
+      "name": "basic/top_wall/ceiling_accessories",
+      "name_zh": "硬装/顶面/吊顶配件",
+      "color": [
+        34,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "top_wall",
+        "level3": "ceiling_accessories"
+      }
+    },
+    {
+      "id": 84,
+      "name": "basic/window/bay_window",
+      "name_zh": "硬装/窗/飘窗",
+      "color": [
+        95,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "window",
+        "level3": "bay_window"
+      }
+    },
+    {
+      "id": 85,
+      "name": "basic/window/casement_window",
+      "name_zh": "硬装/窗/平开窗",
+      "color": [
+        242,
+        85,
+        165
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "window",
+        "level3": "casement_window"
+      }
+    },
+    {
+      "id": 86,
+      "name": "basic/window/sliding_window",
+      "name_zh": "硬装/窗/推拉窗",
+      "color": [
+        20,
+        168,
+        204
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "window",
+        "level3": "sliding_window"
+      }
+    },
+    {
+      "id": 87,
+      "name": "basic/window/floor_to_ceiling_window",
+      "name_zh": "硬装/窗/落地窗",
+      "color": [
+        230,
+        213,
+        57
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "window",
+        "level3": "floor_to_ceiling_window"
+      }
+    },
+    {
+      "id": 88,
+      "name": "basic/window/arch_window",
+      "name_zh": "硬装/窗/拱形窗",
+      "color": [
+        181,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "window",
+        "level3": "arch_window"
+      }
+    },
+    {
+      "id": 89,
+      "name": "basic/window/door_joint_window",
+      "name_zh": "硬装/窗/门联窗",
+      "color": [
+        20,
+        204,
+        80
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "window",
+        "level3": "door_joint_window"
+      }
+    },
+    {
+      "id": 90,
+      "name": "basic/wall/wallpaper",
+      "name_zh": "硬装/墙面/壁纸",
+      "color": [
+        230,
+        63,
+        57
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "wall",
+        "level3": "wallpaper"
+      }
+    },
+    {
+      "id": 91,
+      "name": "basic/wall/wall_cloth",
+      "name_zh": "硬装/墙面/壁布",
+      "color": [
+        85,
+        126,
+        242
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "wall",
+        "level3": "wall_cloth"
+      }
+    },
+    {
+      "id": 92,
+      "name": "basic/wall/wall_brick",
+      "name_zh": "硬装/墙面/墙砖",
+      "color": [
+        122,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "wall",
+        "level3": "wall_brick"
+      }
+    },
+    {
+      "id": 93,
+      "name": "basic/wall/wall_paint",
+      "name_zh": "硬装/墙面/墙漆",
+      "color": [
+        230,
+        57,
+        203
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "wall",
+        "level3": "wall_paint"
+      }
+    },
+    {
+      "id": 94,
+      "name": "basic/wall/weatherboarding",
+      "name_zh": "硬装/墙面/护墙板",
+      "color": [
+        85,
+        242,
+        221
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "wall",
+        "level3": "weatherboarding"
+      }
+    },
+    {
+      "id": 95,
+      "name": "basic/wall/finished_gypsum_line",
+      "name_zh": "硬装/墙面/成品石膏线",
+      "color": [
+        204,
+        125,
+        20
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "wall",
+        "level3": "finished_gypsum_line"
+      }
+    },
+    {
+      "id": 96,
+      "name": "basic/wall/background_wall",
+      "name_zh": "硬装/墙面/背景墙",
+      "color": [
+        105,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "wall",
+        "level3": "background_wall"
+      }
+    },
+    {
+      "id": 97,
+      "name": "basic/wall/fireplace",
+      "name_zh": "硬装/墙面/壁炉",
+      "color": [
+        87,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "wall",
+        "level3": "fireplace"
+      }
+    },
+    {
+      "id": 98,
+      "name": "basic/hard_mounted_line/plaster_line",
+      "name_zh": "硬装/线条/石膏线",
+      "color": [
+        204,
+        20,
+        76
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "hard_mounted_line",
+        "level3": "plaster_line"
+      }
+    },
+    {
+      "id": 99,
+      "name": "basic/hard_mounted_line/baseboard",
+      "name_zh": "硬装/线条/踢脚线",
+      "color": [
+        57,
+        160,
+        230
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "hard_mounted_line",
+        "level3": "baseboard"
+      }
+    },
+    {
+      "id": 100,
+      "name": "basic/hard_mounted_line/decoration_line",
+      "name_zh": "硬装/线条/装饰线",
+      "color": [
+        225,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "hard_mounted_line",
+        "level3": "decoration_line"
+      }
+    },
+    {
+      "id": 101,
+      "name": "basic/hard_mounted_line/corner_flower",
+      "name_zh": "硬装/线条/角花",
+      "color": [
+        171,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "hard_mounted_line",
+        "level3": "corner_flower"
+      }
+    },
+    {
+      "id": 102,
+      "name": "basic/hard_mounted_line/passing_brick",
+      "name_zh": "硬装/线条/过门石",
+      "color": [
+        57,
+        230,
+        148
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "hard_mounted_line",
+        "level3": "passing_brick"
+      }
+    },
+    {
+      "id": 103,
+      "name": "basic/hard_mounted_line/chamfer_strip",
+      "name_zh": "硬装/线条/过门条",
+      "color": [
+        242,
+        122,
+        85
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "hard_mounted_line",
+        "level3": "chamfer_strip"
+      }
+    },
+    {
+      "id": 104,
+      "name": "basic/hard_mounted_line/yangjiaoxian",
+      "name_zh": "硬装/线条/阳角线",
+      "color": [
+        20,
+        30,
+        204
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "hard_mounted_line",
+        "level3": "yangjiaoxian"
+      }
+    },
+    {
+      "id": 105,
+      "name": "basic/hard_mounted_line/windowsill",
+      "name_zh": "硬装/线条/窗台石",
+      "color": [
+        117,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "hard_mounted_line",
+        "level3": "windowsill"
+      }
+    },
+    {
+      "id": 106,
+      "name": "basic/material/wood",
+      "name_zh": "硬装/材料/木材",
+      "color": [
+        242,
+        85,
+        185
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "material",
+        "level3": "wood"
+      }
+    },
+    {
+      "id": 107,
+      "name": "basic/material/stone_material",
+      "name_zh": "硬装/材料/石材",
+      "color": [
+        20,
+        191,
+        204
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "material",
+        "level3": "stone_material"
+      }
+    },
+    {
+      "id": 108,
+      "name": "basic/material/metal",
+      "name_zh": "硬装/材料/金属",
+      "color": [
+        230,
+        191,
+        57
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "material",
+        "level3": "metal"
+      }
+    },
+    {
+      "id": 109,
+      "name": "basic/material/glass",
+      "name_zh": "硬装/材料/玻璃",
+      "color": [
+        161,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "material",
+        "level3": "glass"
+      }
+    },
+    {
+      "id": 110,
+      "name": "basic/structure/column",
+      "name_zh": "硬装/构造/柱",
+      "color": [
+        20,
+        204,
+        56
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "structure",
+        "level3": "column"
+      }
+    },
+    {
+      "id": 111,
+      "name": "basic/structure/guardrail",
+      "name_zh": "硬装/构造/护栏",
+      "color": [
+        230,
+        57,
+        74
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "structure",
+        "level3": "guardrail"
+      }
+    },
+    {
+      "id": 112,
+      "name": "basic/structure/stairs",
+      "name_zh": "硬装/构造/楼梯",
+      "color": [
+        85,
+        146,
+        242
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "structure",
+        "level3": "stairs"
+      }
+    },
+    {
+      "id": 113,
+      "name": "basic/others/others_others",
+      "name_zh": "硬装/其他/其他",
+      "color": [
+        145,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "others",
+        "level3": "others_others"
+      }
+    },
+    {
+      "id": 114,
+      "name": "basic/others/Paving",
+      "name_zh": "硬装/其他/铺贴",
+      "color": [
+        230,
+        57,
+        225
+      ],
+      "taxonomy": {
+        "level1": "basic",
+        "level2": "others",
+        "level3": "Paving"
+      }
+    },
+    {
+      "id": 115,
+      "name": "kitchen_bathroom/kitchen/upper_cabinet",
+      "name_zh": "厨卫/厨房/橱柜吊柜",
+      "color": [
+        85,
+        242,
+        201
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "kitchen",
+        "level3": "upper_cabinet"
+      }
+    },
+    {
+      "id": 116,
+      "name": "kitchen_bathroom/kitchen/lower_cabinet",
+      "name_zh": "厨卫/厨房/厨柜地柜",
+      "color": [
+        204,
+        102,
+        20
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "kitchen",
+        "level3": "lower_cabinet"
+      }
+    },
+    {
+      "id": 117,
+      "name": "kitchen_bathroom/kitchen/kitchenware",
+      "name_zh": "厨卫/厨房/橱具",
+      "color": [
+        83,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "kitchen",
+        "level3": "kitchenware"
+      }
+    },
+    {
+      "id": 118,
+      "name": "kitchen_bathroom/kitchen/hardware_accessories",
+      "name_zh": "厨卫/厨房/厨房五金",
+      "color": [
+        107,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "kitchen",
+        "level3": "hardware_accessories"
+      }
+    },
+    {
+      "id": 119,
+      "name": "kitchen_bathroom/kitchen/kitchen_accessories",
+      "name_zh": "厨卫/厨房/厨房配件",
+      "color": [
+        204,
+        20,
+        100
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "kitchen",
+        "level3": "kitchen_accessories"
+      }
+    },
+    {
+      "id": 120,
+      "name": "kitchen_bathroom/bathroom/bathroom_cabinet",
+      "name_zh": "厨卫/卫浴/浴室地柜",
+      "color": [
+        57,
+        182,
+        230
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "bathroom_cabinet"
+      }
+    },
+    {
+      "id": 121,
+      "name": "kitchen_bathroom/bathroom/bathroom_wall_cabinet",
+      "name_zh": "厨卫/卫浴/浴室吊柜",
+      "color": [
+        242,
+        240,
+        85
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "bathroom_wall_cabinet"
+      }
+    },
+    {
+      "id": 122,
+      "name": "kitchen_bathroom/bathroom/washing_machine_cabinet",
+      "name_zh": "厨卫/卫浴/洗衣机柜",
+      "color": [
+        148,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "washing_machine_cabinet"
+      }
+    },
+    {
+      "id": 123,
+      "name": "kitchen_bathroom/bathroom/bidet",
+      "name_zh": "厨卫/卫浴/妇洗器",
+      "color": [
+        57,
+        230,
+        126
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "bidet"
+      }
+    },
+    {
+      "id": 124,
+      "name": "kitchen_bathroom/bathroom/sauna",
+      "name_zh": "厨卫/卫浴/桑拿房",
+      "color": [
+        242,
+        102,
+        85
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "sauna"
+      }
+    },
+    {
+      "id": 125,
+      "name": "kitchen_bathroom/bathroom/toilet_bowl",
+      "name_zh": "厨卫/卫浴/坐便器",
+      "color": [
+        20,
+        54,
+        204
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "toilet_bowl"
+      }
+    },
+    {
+      "id": 126,
+      "name": "kitchen_bathroom/bathroom/bathtub",
+      "name_zh": "厨卫/卫浴/浴缸",
+      "color": [
+        139,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "bathtub"
+      }
+    },
+    {
+      "id": 127,
+      "name": "kitchen_bathroom/bathroom/shower_room",
+      "name_zh": "厨卫/卫浴/淋浴房",
+      "color": [
+        242,
+        85,
+        205
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "shower_room"
+      }
+    },
+    {
+      "id": 128,
+      "name": "kitchen_bathroom/bathroom/shower",
+      "name_zh": "厨卫/卫浴/花洒",
+      "color": [
+        20,
+        204,
+        193
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "shower"
+      }
+    },
+    {
+      "id": 129,
+      "name": "kitchen_bathroom/bathroom/bathroom_hardware",
+      "name_zh": "厨卫/卫浴/卫浴五金",
+      "color": [
+        230,
+        169,
+        57
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "bathroom_hardware"
+      }
+    },
+    {
+      "id": 130,
+      "name": "kitchen_bathroom/bathroom/washbasin",
+      "name_zh": "厨卫/卫浴/台盆",
+      "color": [
+        141,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "washbasin"
+      }
+    },
+    {
+      "id": 131,
+      "name": "kitchen_bathroom/bathroom/bathroom_accessories",
+      "name_zh": "厨卫/卫浴/浴室配件",
+      "color": [
+        20,
+        204,
+        33
+      ],
+      "taxonomy": {
+        "level1": "kitchen_bathroom",
+        "level2": "bathroom",
+        "level3": "bathroom_accessories"
+      }
+    },
+    {
+      "id": 132,
+      "name": "lighting/table_lamp/desk_lamp",
+      "name_zh": "灯饰/台灯/台灯",
+      "color": [
+        230,
+        57,
+        96
+      ],
+      "taxonomy": {
+        "level1": "lighting",
+        "level2": "table_lamp",
+        "level3": "desk_lamp"
+      }
+    },
+    {
+      "id": 133,
+      "name": "lighting/dome_light/ceiling_lamp",
+      "name_zh": "灯饰/顶灯/吸顶灯",
+      "color": [
+        85,
+        166,
+        242
+      ],
+      "taxonomy": {
+        "level1": "lighting",
+        "level2": "dome_light",
+        "level3": "ceiling_lamp"
+      }
+    },
+    {
+      "id": 134,
+      "name": "lighting/dome_light/chandelier",
+      "name_zh": "灯饰/顶灯/吊灯",
+      "color": [
+        169,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "lighting",
+        "level2": "dome_light",
+        "level3": "chandelier"
+      }
+    },
+    {
+      "id": 135,
+      "name": "lighting/dome_light/down_lamp",
+      "name_zh": "灯饰/顶灯/筒灯",
+      "color": [
+        212,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "lighting",
+        "level2": "dome_light",
+        "level3": "down_lamp"
+      }
+    },
+    {
+      "id": 136,
+      "name": "lighting/dome_light/spotlight",
+      "name_zh": "灯饰/顶灯/射灯",
+      "color": [
+        85,
+        242,
+        180
+      ],
+      "taxonomy": {
+        "level1": "lighting",
+        "level2": "dome_light",
+        "level3": "spotlight"
+      }
+    },
+    {
+      "id": 137,
+      "name": "lighting/floor_lamp/standard_lamp",
+      "name_zh": "灯饰/落地灯/落地灯",
+      "color": [
+        204,
+        78,
+        20
+      ],
+      "taxonomy": {
+        "level1": "lighting",
+        "level2": "floor_lamp",
+        "level3": "standard_lamp"
+      }
+    },
+    {
+      "id": 138,
+      "name": "lighting/wall_lamp/bracket_light",
+      "name_zh": "灯饰/壁灯/壁灯",
+      "color": [
+        61,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "lighting",
+        "level2": "wall_lamp",
+        "level3": "bracket_light"
+      }
+    },
+    {
+      "id": 139,
+      "name": "lighting/engineering_light/engineering_light",
+      "name_zh": "灯饰/工程灯/工程灯",
+      "color": [
+        127,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "lighting",
+        "level2": "engineering_light",
+        "level3": "engineering_light"
+      }
+    },
+    {
+      "id": 140,
+      "name": "lighting/engineering_light/magnet_light",
+      "name_zh": "灯饰/工程灯/磁吸灯",
+      "color": [
+        204,
+        20,
+        123
+      ],
+      "taxonomy": {
+        "level1": "lighting",
+        "level2": "engineering_light",
+        "level3": "magnet_light"
+      }
+    },
+    {
+      "id": 141,
+      "name": "home_decoration/cloth_soft_decoration/curtain",
+      "name_zh": "家饰/布艺软饰/窗帘",
+      "color": [
+        57,
+        204,
+        230
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "cloth_soft_decoration",
+        "level3": "curtain"
+      }
+    },
+    {
+      "id": 142,
+      "name": "home_decoration/cloth_soft_decoration/carpet",
+      "name_zh": "家饰/布艺软饰/地毯",
+      "color": [
+        242,
+        220,
+        85
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "cloth_soft_decoration",
+        "level3": "carpet"
+      }
+    },
+    {
+      "id": 143,
+      "name": "home_decoration/cloth_soft_decoration/pillow",
+      "name_zh": "家饰/布艺软饰/抱枕靠垫",
+      "color": [
+        124,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "cloth_soft_decoration",
+        "level3": "pillow"
+      }
+    },
+    {
+      "id": 144,
+      "name": "home_decoration/cloth_soft_decoration/bedding",
+      "name_zh": "家饰/布艺软饰/床品",
+      "color": [
+        57,
+        230,
+        104
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "cloth_soft_decoration",
+        "level3": "bedding"
+      }
+    },
+    {
+      "id": 145,
+      "name": "home_decoration/cloth_soft_decoration/others",
+      "name_zh": "家饰/布艺软饰/其他",
+      "color": [
+        242,
+        85,
+        88
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "cloth_soft_decoration",
+        "level3": "others"
+      }
+    },
+    {
+      "id": 146,
+      "name": "home_decoration/wall_hangings/pendant",
+      "name_zh": "家饰/挂件/挂件",
+      "color": [
+        20,
+        77,
+        204
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "wall_hangings",
+        "level3": "pendant"
+      }
+    },
+    {
+      "id": 147,
+      "name": "home_decoration/painting/hanging_painting",
+      "name_zh": "家饰/画/挂画",
+      "color": [
+        161,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "painting",
+        "level3": "hanging_painting"
+      }
+    },
+    {
+      "id": 148,
+      "name": "home_decoration/painting/placing_painting",
+      "name_zh": "家饰/画/摆画",
+      "color": [
+        242,
+        85,
+        226
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "painting",
+        "level3": "placing_painting"
+      }
+    },
+    {
+      "id": 149,
+      "name": "home_decoration/toy/toys",
+      "name_zh": "家饰/玩具/玩具",
+      "color": [
+        20,
+        204,
+        170
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "toy",
+        "level3": "toys"
+      }
+    },
+    {
+      "id": 150,
+      "name": "home_decoration/pet_supplies/pet_products",
+      "name_zh": "家饰/宠物/宠物用品",
+      "color": [
+        230,
+        147,
+        57
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "pet_supplies",
+        "level3": "pet_products"
+      }
+    },
+    {
+      "id": 151,
+      "name": "home_decoration/tableware/kitchen_supplies",
+      "name_zh": "家饰/摆件/餐厨用品",
+      "color": [
+        121,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "tableware",
+        "level3": "kitchen_supplies"
+      }
+    },
+    {
+      "id": 152,
+      "name": "home_decoration/tableware/clocks",
+      "name_zh": "家饰/摆件/钟表",
+      "color": [
+        32,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "tableware",
+        "level3": "clocks"
+      }
+    },
+    {
+      "id": 153,
+      "name": "home_decoration/tableware/clothing_accessories",
+      "name_zh": "家饰/摆件/服装配饰",
+      "color": [
+        230,
+        57,
+        118
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "tableware",
+        "level3": "clothing_accessories"
+      }
+    },
+    {
+      "id": 154,
+      "name": "home_decoration/tableware/tableware_others",
+      "name_zh": "家饰/摆件/其它",
+      "color": [
+        85,
+        186,
+        242
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "tableware",
+        "level3": "tableware_others"
+      }
+    },
+    {
+      "id": 155,
+      "name": "home_decoration/plants/green_plants",
+      "name_zh": "家饰/植物花卉/绿植",
+      "color": [
+        192,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "plants",
+        "level3": "green_plants"
+      }
+    },
+    {
+      "id": 156,
+      "name": "home_decoration/plants/flowers",
+      "name_zh": "家饰/植物花卉/花卉",
+      "color": [
+        190,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "plants",
+        "level3": "flowers"
+      }
+    },
+    {
+      "id": 157,
+      "name": "home_decoration/mirror/decorative_mirror",
+      "name_zh": "家饰/镜子/装饰镜",
+      "color": [
+        85,
+        242,
+        160
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "mirror",
+        "level3": "decorative_mirror"
+      }
+    },
+    {
+      "id": 158,
+      "name": "home_decoration/mirror/dressing_mirror",
+      "name_zh": "家饰/镜子/试衣镜",
+      "color": [
+        204,
+        55,
+        20
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "mirror",
+        "level3": "dressing_mirror"
+      }
+    },
+    {
+      "id": 159,
+      "name": "home_decoration/mirror/cosmetic_mirror",
+      "name_zh": "家饰/镜子/化妆镜",
+      "color": [
+        57,
+        75,
+        230
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "mirror",
+        "level3": "cosmetic_mirror"
+      }
+    },
+    {
+      "id": 160,
+      "name": "home_decoration/literary_form/gym_equipment",
+      "name_zh": "家饰/文体/健身器材",
+      "color": [
+        147,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "literary_form",
+        "level3": "gym_equipment"
+      }
+    },
+    {
+      "id": 161,
+      "name": "home_decoration/literary_form/musical_instruments",
+      "name_zh": "家饰/文体/乐器",
+      "color": [
+        204,
+        20,
+        147
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "literary_form",
+        "level3": "musical_instruments"
+      }
+    },
+    {
+      "id": 162,
+      "name": "home_decoration/literary_form/art_material",
+      "name_zh": "家饰/文体/美术用品",
+      "color": [
+        57,
+        226,
+        230
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "literary_form",
+        "level3": "art_material"
+      }
+    },
+    {
+      "id": 163,
+      "name": "home_decoration/literary_form/cultural_and_educational_books",
+      "name_zh": "家饰/文体/书籍文教",
+      "color": [
+        242,
+        200,
+        85
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "literary_form",
+        "level3": "cultural_and_educational_books"
+      }
+    },
+    {
+      "id": 164,
+      "name": "home_decoration/trash_can/refuse_bin",
+      "name_zh": "家饰/垃圾桶/垃圾桶",
+      "color": [
+        101,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "trash_can",
+        "level3": "refuse_bin"
+      }
+    },
+    {
+      "id": 165,
+      "name": "home_decoration/screen_partition/screen_partition",
+      "name_zh": "家饰/屏风隔断/屏风隔断",
+      "color": [
+        57,
+        230,
+        82
+      ],
+      "taxonomy": {
+        "level1": "home_decoration",
+        "level2": "screen_partition",
+        "level3": "screen_partition"
+      }
+    },
+    {
+      "id": 166,
+      "name": "appliance/electric_appliance/heater",
+      "name_zh": "家电/生活电器/取暖电器",
+      "color": [
+        242,
+        85,
+        108
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "heater"
+      }
+    },
+    {
+      "id": 167,
+      "name": "appliance/electric_appliance/washing_machine",
+      "name_zh": "家电/生活电器/洗衣机",
+      "color": [
+        20,
+        101,
+        204
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "washing_machine"
+      }
+    },
+    {
+      "id": 168,
+      "name": "appliance/electric_appliance/air_cleaner",
+      "name_zh": "家电/生活电器/空气净化器",
+      "color": [
+        183,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "air_cleaner"
+      }
+    },
+    {
+      "id": 169,
+      "name": "appliance/electric_appliance/humidifier",
+      "name_zh": "家电/生活电器/加湿器",
+      "color": [
+        239,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "humidifier"
+      }
+    },
+    {
+      "id": 170,
+      "name": "appliance/electric_appliance/steamer",
+      "name_zh": "家电/生活电器/挂烫机",
+      "color": [
+        20,
+        204,
+        146
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "steamer"
+      }
+    },
+    {
+      "id": 171,
+      "name": "appliance/electric_appliance/television",
+      "name_zh": "家电/生活电器/电视",
+      "color": [
+        230,
+        125,
+        57
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "television"
+      }
+    },
+    {
+      "id": 172,
+      "name": "appliance/electric_appliance/refrigerator",
+      "name_zh": "家电/生活电器/冰箱",
+      "color": [
+        101,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "refrigerator"
+      }
+    },
+    {
+      "id": 173,
+      "name": "appliance/electric_appliance/computer",
+      "name_zh": "家电/生活电器/电脑",
+      "color": [
+        55,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "computer"
+      }
+    },
+    {
+      "id": 174,
+      "name": "appliance/electric_appliance/air_conditioning",
+      "name_zh": "家电/生活电器/空调",
+      "color": [
+        230,
+        57,
+        140
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "air_conditioning"
+      }
+    },
+    {
+      "id": 175,
+      "name": "appliance/electric_appliance/water_dispenser",
+      "name_zh": "家电/生活电器/饮水机",
+      "color": [
+        85,
+        206,
+        242
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "water_dispenser"
+      }
+    },
+    {
+      "id": 176,
+      "name": "appliance/electric_appliance/clothes_hanger",
+      "name_zh": "家电/生活电器/晾衣架",
+      "color": [
+        204,
+        192,
+        20
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electric_appliance",
+        "level3": "clothes_hanger"
+      }
+    },
+    {
+      "id": 177,
+      "name": "appliance/kitchen_appliance/microwave_oven",
+      "name_zh": "家电/厨卫电器/微波炉",
+      "color": [
+        168,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "microwave_oven"
+      }
+    },
+    {
+      "id": 178,
+      "name": "appliance/kitchen_appliance/oven",
+      "name_zh": "家电/厨卫电器/烤箱",
+      "color": [
+        85,
+        242,
+        140
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "oven"
+      }
+    },
+    {
+      "id": 179,
+      "name": "appliance/kitchen_appliance/water_purifier",
+      "name_zh": "家电/厨卫电器/净水器",
+      "color": [
+        204,
+        31,
+        20
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "water_purifier"
+      }
+    },
+    {
+      "id": 180,
+      "name": "appliance/kitchen_appliance/dishwasher",
+      "name_zh": "家电/厨卫电器/洗碗机",
+      "color": [
+        57,
+        97,
+        230
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "dishwasher"
+      }
+    },
+    {
+      "id": 181,
+      "name": "appliance/kitchen_appliance/embedded_appliance",
+      "name_zh": "家电/厨卫电器/嵌入式家电",
+      "color": [
+        167,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "embedded_appliance"
+      }
+    },
+    {
+      "id": 182,
+      "name": "appliance/kitchen_appliance/cooker_hood",
+      "name_zh": "家电/厨卫电器/抽油烟机",
+      "color": [
+        204,
+        20,
+        170
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "cooker_hood"
+      }
+    },
+    {
+      "id": 183,
+      "name": "appliance/kitchen_appliance/gas_stove",
+      "name_zh": "家电/厨卫电器/燃气灶",
+      "color": [
+        57,
+        230,
+        211
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "gas_stove"
+      }
+    },
+    {
+      "id": 184,
+      "name": "appliance/kitchen_appliance/disinfection_cabinet",
+      "name_zh": "家电/厨卫电器/消毒柜",
+      "color": [
+        242,
+        179,
+        85
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "disinfection_cabinet"
+      }
+    },
+    {
+      "id": 185,
+      "name": "appliance/kitchen_appliance/water_heater",
+      "name_zh": "家电/厨卫电器/热水器",
+      "color": [
+        77,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "water_heater"
+      }
+    },
+    {
+      "id": 186,
+      "name": "appliance/kitchen_appliance/bath_heater",
+      "name_zh": "家电/厨卫电器/浴霸",
+      "color": [
+        57,
+        230,
+        60
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "bath_heater"
+      }
+    },
+    {
+      "id": 187,
+      "name": "appliance/kitchen_appliance/kitchen_electron",
+      "name_zh": "家电/厨卫电器/厨房小家电",
+      "color": [
+        242,
+        85,
+        128
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "kitchen_appliance",
+        "level3": "kitchen_electron"
+      }
+    },
+    {
+      "id": 188,
+      "name": "appliance/digital_products/digital_audio_and_video",
+      "name_zh": "家电/数码影音/",
+      "color": [
+        20,
+        124,
+        204
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "digital_products",
+        "level3": "digital_audio_and_video"
+      }
+    },
+    {
+      "id": 189,
+      "name": "appliance/switch_socket/socket",
+      "name_zh": "家电/开关插座/开关",
+      "color": [
+        205,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "switch_socket",
+        "level3": "socket"
+      }
+    },
+    {
+      "id": 190,
+      "name": "appliance/switch_socket/socket_origin",
+      "name_zh": "家电/开关插座/插座",
+      "color": [
+        219,
+        85,
+        242
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "switch_socket",
+        "level3": "socket_origin"
+      }
+    },
+    {
+      "id": 191,
+      "name": "appliance/switch_socket/router",
+      "name_zh": "家电/开关插座/路由器",
+      "color": [
+        20,
+        204,
+        123
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "switch_socket",
+        "level3": "router"
+      }
+    },
+    {
+      "id": 192,
+      "name": "appliance/switch_socket/intelligent_central",
+      "name_zh": "家电/开关插座/网关",
+      "color": [
+        230,
+        103,
+        57
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "switch_socket",
+        "level3": "intelligent_central"
+      }
+    },
+    {
+      "id": 193,
+      "name": "appliance/switch_socket/sensor",
+      "name_zh": "家电/开关插座/传感器",
+      "color": [
+        85,
+        89,
+        242
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "switch_socket",
+        "level3": "sensor"
+      }
+    },
+    {
+      "id": 194,
+      "name": "appliance/electricity_box/electrical_box",
+      "name_zh": "家电/电箱/电箱",
+      "color": [
+        79,
+        204,
+        20
+      ],
+      "taxonomy": {
+        "level1": "appliance",
+        "level2": "electricity_box",
+        "level3": "electrical_box"
+      }
+    },
+    {
+      "id": 195,
+      "name": "floor",
+      "name_zh": "地板",
+      "color": [
+        230,
+        57,
+        162
+      ],
+      "taxonomy": {
+        "level1": "floor",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 196,
+      "name": "wall",
+      "name_zh": "墙面",
+      "color": [
+        85,
+        227,
+        242
+      ],
+      "taxonomy": {
+        "level1": "wall",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 197,
+      "name": "ceiling",
+      "name_zh": "铝扣板吊顶",
+      "color": [
+        204,
+        169,
+        20
+      ],
+      "taxonomy": {
+        "level1": "ceiling",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 198,
+      "name": "basic_others",
+      "name_zh": "其它硬装",
+      "color": [
+        146,
+        57,
+        230
+      ],
+      "taxonomy": {
+        "level1": "basic_others",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 199,
+      "name": "custom_wardrobe",
+      "name_zh": "定制衣柜",
+      "color": [
+        85,
+        242,
+        120
+      ],
+      "taxonomy": {
+        "level1": "custom_wardrobe",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 200,
+      "name": "custom_TVcab",
+      "name_zh": "定制电视柜",
+      "color": [
+        204,
+        20,
+        33
+      ],
+      "taxonomy": {
+        "level1": "custom_TVcab",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 201,
+      "name": "custom_ves",
+      "name_zh": "定制玄关柜",
+      "color": [
+        57,
+        119,
+        230
+      ],
+      "taxonomy": {
+        "level1": "custom_ves",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 202,
+      "name": "custom_cabinet",
+      "name_zh": "定制橱柜",
+      "color": [
+        187,
+        242,
+        85
+      ],
+      "taxonomy": {
+        "level1": "custom_cabinet",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 203,
+      "name": "custom_book",
+      "name_zh": "定制书柜",
+      "color": [
+        204,
+        20,
+        193
+      ],
+      "taxonomy": {
+        "level1": "custom_book",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 204,
+      "name": "custom_dining",
+      "name_zh": "定制餐边柜",
+      "color": [
+        57,
+        230,
+        189
+      ],
+      "taxonomy": {
+        "level1": "custom_dining",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 205,
+      "name": "custom_model",
+      "name_zh": "定制其它",
+      "color": [
+        242,
+        159,
+        85
+      ],
+      "taxonomy": {
+        "level1": "custom_model",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 206,
+      "name": "custom_cab",
+      "name_zh": "定制柜",
+      "color": [
+        54,
+        20,
+        204
+      ],
+      "taxonomy": {
+        "level1": "custom_cab",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 207,
+      "name": "custom_bedroom_cab",
+      "name_zh": "定制卧室柜",
+      "color": [
+        76,
+        230,
+        57
+      ],
+      "taxonomy": {
+        "level1": "custom_bedroom_cab",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 208,
+      "name": "housekeeping_cab",
+      "name_zh": "定制家政柜",
+      "color": [
+        242,
+        85,
+        148
+      ],
+      "taxonomy": {
+        "level1": "housekeeping_cab",
+        "level2": null,
+        "level3": null
+      }
+    },
+    {
+      "id": 209,
+      "name": "storage_cab",
+      "name_zh": "定制储物柜",
+      "color": [
+        20,
+        148,
+        204
+      ],
+      "taxonomy": {
+        "level1": "storage_cab",
+        "level2": null,
+        "level3": null
+      }
+    }
+  ]
+}
