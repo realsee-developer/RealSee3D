@@ -26,6 +26,8 @@ The Realsee3D dataset is organized into individual scenes, each containing detai
 To access the dataset, you must sign a Data Usage Agreement (PDF format). You can download the agreement directly [here](docs/Realsee3D_Dataset_agreement.pdf).
 Please send your request, specifying your intended use, to **developer@realsee.com** with the subject **[Realsee3D Dataset Application]**. Once your application is approved and you have signed the agreement, we will reply with download instructions and links.
 
+> **Already have Phase I access?** You do **not** need to submit a new agreement. Simply forward your previous approval email to **developer@realsee.com**, including a Google-Drive-accessible email address, and we will grant you download access to the Phase II data directly.
+
 
 ## 📊 Statistics
 

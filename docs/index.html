@@ -99,7 +99,7 @@
             "url": "https://realsee.com/"
         },
         "datePublished": "2025-11-28",
-        "dateModified": "2025-11-28",
+        "dateModified": "2026-06-24",
         "version": "1.0",
         "measurementTechnique": "LiDAR scanning and synthetic rendering",
         "variableMeasured": [
@@ -183,7 +183,7 @@
                 "name": "What data formats are included in Realsee3D?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Realsee3D provides multiple data modalities including: HDR panoramic RGB images (equirectangular projection), depth maps synthesized from LiDAR point clouds, semantic segmentation labels, surface normal maps (synthetic only), CAD drawings, floorplans, and 3D object detection annotations with precise camera poses."
+                    "text": "Realsee3D provides multiple data modalities including: HDR panoramic RGB images (equirectangular projection), depth maps synthesized from LiDAR point clouds, and per-viewpoint semantic segmentation maps (segment.png; available for both real-world and synthetic scenes, with real-world labels being current-model predictions rather than manual annotation). Additional modalities such as surface normal maps (synthetic only), CAD drawings, floorplans, and 3D object detection annotations are forthcoming."
                 }
             },
             {
@@ -299,7 +299,7 @@
                         </div>
                     </div>
                     <p class="highlight-purpose">Realsee3D aims to serve as a unified benchmark for high-fidelity indoor scene modeling, facilitating research in geometry reconstruction, multimodal learning, and embodied AI.</p>
-                    <p>Beyond RGB-D imagery, the dataset provides comprehensive annotations, including CAD drawings, floorplans, semantic segmentation labels, and 3D object detection information.</p>
+                    <p>Beyond RGB-D imagery, the dataset now provides per-viewpoint semantic segmentation (<code>segment.png</code>) for both real-world and synthetic scenes (real-world labels are current-model predictions). Additional annotations &mdash; CAD drawings, floorplans, and 3D object detection &mdash; are forthcoming.</p>
                 </div>
             </article>
 
@@ -391,7 +391,7 @@
                                 <p>Our Realsee "Weilaijia" model library contains &gt;100,000 models across 200+ categories. Unlike low-poly approximations, our models preserve fine geometric details and use PBR materials for realistic surface properties (specular highlights, subsurface scattering).</p>
                                 
                                 <h4>Ray-Tracing Engine</h4>
-                                <p>Built on a modified <cite>UE4</cite>, our pipeline utilizes Ray Tracing for accurate Global Illumination (GI), Reflections, and Ambient Occlusion. We integrate <cite>DLSS</cite> and five distinct illumination schemas including Warm Day, Cold Day, Natural Day, Warm Night, and Cold Night to maximize domain variability.</p>
+                                <p>Built on a modified <cite>Unreal Engine 5</cite>, our pipeline utilizes Ray Tracing for accurate Global Illumination (GI), Reflections, and Ambient Occlusion. We integrate <cite>DLSS</cite> and five distinct illumination schemas including Warm Day, Cold Day, Natural Day, Warm Night, and Cold Night to maximize domain variability.</p>
                             </div>
                         </details>
                     </div>
@@ -421,6 +421,8 @@
                 <div class="content-block">
                     <h2 itemprop="name">Download Dataset</h2>
                     <p itemprop="articleBody">To access the dataset, you must sign a Data Usage Agreement (PDF format). You can download the agreement directly below. Please send your request, specifying your intended use, to <strong><a href="mailto:developer@realsee.com">developer@realsee.com</a></strong>. Once your application is approved and you have signed the agreement, we will reply with download instructions and links.</p>
+                    <p><strong>Already have Phase I access?</strong> You do <strong>not</strong> need to submit a new agreement. Simply forward your previous approval email to <a href="mailto:developer@realsee.com">developer@realsee.com</a>, including a Google-Drive-accessible email address, and we will grant you download access to the Phase II data directly.</p>
+                    <p>For the data format, the semantic segmentation <code>segment.png</code> encoding, the class-mapping JSON files (real / synthetic) with the official colour palette, and the visualization script, see the <a href="https://github.com/realsee-developer/RealSee3D/blob/main/DATASET_STRUCTURE.md">dataset structure documentation</a>.</p>
                     <p><a href="Realsee3D_Dataset_agreement.pdf" download class="btn btn-primary">Download Data Usage Agreement (PDF)</a></p>
                 </div>
             </article>
@@ -440,14 +442,14 @@
                         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <h3 itemprop="name">How can I download the Realsee3D Dataset?</h3>
                             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text">To access the dataset, you must sign a Data Usage Agreement (PDF format). You can download the agreement directly <a href="Realsee3D_Dataset_agreement.pdf" download>here</a>. Please send your request, specifying your intended use, to <a href="mailto:developer@realsee.com">developer@realsee.com</a>. Once your application is approved and you have signed the agreement, you will receive download instructions and links.</p>
+                                <p itemprop="text">To access the dataset, you must sign a Data Usage Agreement (PDF format). You can download the agreement directly <a href="Realsee3D_Dataset_agreement.pdf" download>here</a>. Please send your request, specifying your intended use, to <a href="mailto:developer@realsee.com">developer@realsee.com</a>. Once your application is approved and you have signed the agreement, you will receive download instructions and links. If you already have Phase I access, you do not need to submit a new agreement &mdash; simply forward your previous approval email (including a Google-Drive-accessible email address) to <a href="mailto:developer@realsee.com">developer@realsee.com</a> to receive Phase II download access.</p>
                             </div>
                         </div>
                         
                         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <h3 itemprop="name">What data formats are included in Realsee3D?</h3>
                             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text">Realsee3D provides multiple data modalities including: HDR panoramic RGB images (equirectangular projection), depth maps synthesized from LiDAR point clouds, semantic segmentation labels, surface normal maps (synthetic only), CAD drawings, floorplans, and 3D object detection annotations with precise camera poses.</p>
+                                <p itemprop="text">Realsee3D provides multiple data modalities including: HDR panoramic RGB images (equirectangular projection), depth maps synthesized from LiDAR point clouds, and per-viewpoint semantic segmentation maps (<code>segment.png</code>, available for both real-world and synthetic scenes &mdash; real-world labels are current-model predictions, not manual annotation). Additional modalities such as surface normal maps (synthetic only), CAD drawings, floorplans, and 3D object detection annotations are forthcoming.</p>
                             </div>
                         </div>
                         
@@ -472,6 +474,7 @@
                 <div class="content-block">
                     <h2 itemprop="name">Changelog</h2>
                     <ul itemprop="articleBody">
+                        <li><strong><time datetime="2026-06-24">2026-06-24</time>:</strong> Phase II data released &mdash; per-viewpoint pixel-wise semantic segmentation (<code>segment.png</code>) for both real-world and synthetic scenes. Real-world maps are current-model predictions (not manual annotation); ground-truth annotations are planned for a future release.</li>
                         <li><strong><time datetime="2025-12-05">2025-12-05</time>:</strong> Phase I data(RGB-D pano and extrinsics) release.</li>
                         <li><strong><time datetime="2025-11-28">2025-11-28</time>:</strong> Dataset introduction and official website release.</li>
                     </ul>
