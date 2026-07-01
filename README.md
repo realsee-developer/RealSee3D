@@ -3,7 +3,7 @@
 ![Dataset Overview](assets/dataset_overview.png)
 
 [![Website](https://img.shields.io/badge/Website-visit-blue)](https://dataset.realsee.ai/)
-[![Download](https://img.shields.io/badge/Download-now-green)](https://https://dataset.realsee.ai/#download)
+[![Download](https://img.shields.io/badge/Download-now-green)](https://dataset.realsee.ai/#download)
 
 Realsee3D is a large-scale, multi-view RGB-D dataset containing 10,000 indoor scenes, comprising real-world residential scenes captured by 3D LiDAR Camera and procedurally generated scenes.
 
