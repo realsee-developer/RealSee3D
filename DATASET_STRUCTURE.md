@@ -7,6 +7,7 @@ The Realsee3D dataset adheres to a hierarchical file organization centered aroun
 ```text
 scene_id/
 ├── viewpoints.txt       # Registry of all viewpoint IDs (timestamps) within the scene.
+├── covisibility.txt     # NxN covisibility score matrix over the scene's viewpoints (see §2).
 └── viewpoints/
     └── viewpoint_id/    # Container for specific viewpoint data.
         ├── panoImage_1600.jpg  # Equirectangular RGB Panorama (typically 1600x800).
@@ -94,6 +95,24 @@ This file provides the **Camera-to-World** transformation matrix ($4 \times 4$).
 
 ### Floor Information (`floor.txt`)
 For complex, multi-story environments, this file specifies the **floor index** to which the viewpoint belongs. This annotation facilitates vertical semantic understanding and floor-level data separation.
+
+### Covisibility Score Matrix (`covisibility.txt`)
+Located at the **scene root** (alongside `viewpoints.txt`), this file stores the pairwise **covisibility scores** between all viewpoints in the scene. It is the data used by [Argus](https://argus-paper.realsee.ai/) to learn reference-view selection for anchoring the metric world frame.
+
+*   **Format**: A plain-text $N \times N$ matrix, where $N$ is the number of viewpoints in the scene. Each row contains $N$ space-separated floating-point values, and there are $N$ rows. The row/column ordering **exactly follows the order of viewpoint IDs listed in [`viewpoints.txt`](#file-hierarchy)** — entry $(i, j)$ is the covisibility score between the $i$-th and $j$-th viewpoint in that file.
+
+*   **Definition**: The score between views $i$ and $j$ is the fraction of a view's pixels that are co-visible with the other view:
+
+    $$s_{ij} = \frac{c_{ij}}{\mathcal{P}}$$
+
+    where $c_{ij}$ is the number of **co-visible pixels** between the two panoramas and $\mathcal{P}$ is the total pixel count of a single panorama. Co-visible pixels are found by back-projecting each pixel using its depth, transforming it into the other view via the relative camera pose (from `extrinsics.txt`), reprojecting it, and applying occlusion/depth-buffer checking. For the real-world LiDAR subset, the warped masks are **dilated** to alleviate depth sparsity and align the score distribution with the synthetic subset.
+
+*   **Properties**:
+    *   **Range**: $s_{ij} \in [0, 1]$. A higher value means more geometric overlap between the two viewpoints.
+    *   **Diagonal**: $s_{ii} = 1.0$ (a view is fully co-visible with itself).
+    *   **Symmetry**: the shipped matrix is symmetric ($s_{ij} = s_{ji}$).
+
+*   **More details**: For the full formulation, how the per-view *global* covisibility score is derived from this matrix, and how it is used for reference-view selection to anchor the metric world frame, please refer to the [Argus paper](https://argus-paper.realsee.ai/) and its supplementary material.
 
 ## 3. Tools & Utilities
 

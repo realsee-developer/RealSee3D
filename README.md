@@ -35,9 +35,24 @@ For a detailed breakdown of dataset statistics, please refer to [metadata/README
 
 ## 📋 Changelog
 
+*   **2026-07-01:** Our new work [**Argus**](https://argus-paper.realsee.ai/) — a metric panoramic 3D reconstruction method trained on Realsee3D (ECCV 2026) — is now released. The covisibility score matrix data used by Argus is now available in Realsee3D. See [DATASET_STRUCTURE.md](DATASET_STRUCTURE.md) for more details.
 *   **2026-06-25:** Phase II data released — per-viewpoint pixel-wise semantic segmentation (`segment.png`) for both real-world and synthetic scenes. Real-world maps are current-model predictions (not manual annotation); ground-truth annotations are planned for a future release. See [DATASET_STRUCTURE.md](DATASET_STRUCTURE.md) for details.
 *   **2025-12-05:** Phase I data(RGB-D pano and extrinsics) released.
 *   **2025-11-28:** Dataset introduction and official website release.
+
+## 🔬 Built with Realsee3D
+
+**Argus: Metric Panoramic 3D Reconstruction for Indoor Scenes** *(ECCV 2026)*
+
+Argus is a data-driven feed-forward network trained on Realsee3D that reconstructs complete, geometrically consistent, metric-scale indoor 3D scenes from sparse, unordered panoramic images in a single forward pass. Argus achieves state-of-the-art metric performance on camera pose estimation, depth estimation, and point cloud reconstruction on the Realsee3D benchmark, demonstrating the value and usability of the dataset for panoramic 3D reconstruction research.
+
+*   **Project Page:** https://argus-paper.realsee.ai/
+*   **Paper:** [arXiv:2606.30047](https://arxiv.org/abs/2606.30047)
+*   **Code:** [github.com/realsee-developer/Argus](https://github.com/realsee-developer/Argus)
+*   **Model:** [RealseeTechnology/argus-realsee3d](https://huggingface.co/RealseeTechnology/argus-realsee3d)
+*   **Demo:** [RealseeDeveloper/Argus](https://huggingface.co/spaces/RealseeDeveloper/Argus)
+
+> Building on Realsee3D? Feel free to open a PR/issue to have your work listed here.
 
 ## 📄 Citation
 
@@ -51,6 +66,18 @@ If you use the Realsee3D dataset in your research, please cite our paper:
   title = {Realsee3D: A Large-Scale Multi-View RGB-D Dataset of Indoor Scenes (Version 1.1)},
   publisher = {Zenodo},
   year = {2026}
+}
+```
+
+```
+@misc{li2026argusmetricpanoramic3d,
+  title={Argus: Metric Panoramic 3D Reconstruction for Indoor Scenes},
+  author={Xi Li and Linyuan Li and Yan Wu and Tong Rao and Kai Zhang and Xinchen Hui and Cihui Pan},
+  year={2026},
+  eprint={2606.30047},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2606.30047}
 }
 ```
 
