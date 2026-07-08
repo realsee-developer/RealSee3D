@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>Realsee3D Dataset - Large-Scale Multi-View RGB-D Indoor Dataset</title>
     <meta name="title" content="Realsee3D Dataset - Large-Scale Multi-View RGB-D Indoor Dataset">
@@ -230,6 +230,98 @@
             ]
         }
     }
+    </script>
+    <script>
+    (function () {
+        var measurementId = "G-GLTGD29RWX";
+        var linkedDomains = ["argus.realsee.ai", "argus-paper.realsee.ai", "dataset.realsee.ai", "h5.realsee.ai"];
+
+        if (!linkedDomains.includes(window.location.hostname)) return;
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+        window.gtag("set", "linker", { domains: linkedDomains });
+        window.gtag("js", new Date());
+        window.gtag("config", measurementId);
+
+        var gtagScript = document.createElement("script");
+        gtagScript.async = true;
+        gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(measurementId);
+        document.head.appendChild(gtagScript);
+
+        function findArticleId(element) {
+            var article = element.closest("article[id]");
+            return article ? article.id : "global";
+        }
+
+        function trackDatasetEvent(name, params) {
+            if (typeof window.gtag !== "function") return;
+            window.gtag("event", name, Object.assign({ source_site: "dataset_site" }, params));
+        }
+
+        function safeLinkUrl(url) {
+            return url.protocol === "mailto:" ? "mailto:" : url.origin + url.pathname;
+        }
+
+        function safeLinkPath(url) {
+            return url.protocol === "mailto:" ? "" : url.pathname;
+        }
+
+        document.addEventListener("click", function (event) {
+            if (!(event.target instanceof Element)) return;
+
+            var link = event.target.closest("a[href]");
+            if (!link) return;
+
+            var url = new URL(link.href, window.location.href);
+            var params = {
+                link_url: safeLinkUrl(url),
+                link_domain: url.hostname,
+                link_path: safeLinkPath(url),
+                link_text: (link.textContent || "").trim().slice(0, 100),
+                section_id: findArticleId(link),
+            };
+
+            trackDatasetEvent("realsee3d_link_click", params);
+
+            if (url.hash && url.origin === window.location.origin) {
+                trackDatasetEvent("realsee3d_section_jump", Object.assign({}, params, { target_section: url.hash.slice(1) }));
+            }
+
+            if (link.hasAttribute("download") || url.pathname.endsWith(".pdf")) {
+                trackDatasetEvent("realsee3d_agreement_download", params);
+            }
+
+            if (url.protocol === "mailto:") {
+                trackDatasetEvent("realsee3d_contact_click", params);
+            }
+
+            if (url.origin !== window.location.origin && url.protocol !== "mailto:") {
+                trackDatasetEvent("realsee3d_outbound_click", params);
+            }
+
+            if (linkedDomains.includes(url.hostname) && url.hostname !== window.location.hostname) {
+                trackDatasetEvent("argus_cross_site_click", params);
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!("IntersectionObserver" in window)) return;
+
+            var seenSections = new Set();
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting || seenSections.has(entry.target.id)) return;
+                    seenSections.add(entry.target.id);
+                    trackDatasetEvent("realsee3d_section_view", { section_id: entry.target.id });
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll("article[id]").forEach(function (section) {
+                observer.observe(section);
+            });
+        });
+    })();
     </script>
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
