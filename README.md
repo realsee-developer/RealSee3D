@@ -70,14 +70,13 @@ If you use the Realsee3D dataset in your research, please cite our paper:
 ```
 
 ```
-@misc{li2026argusmetricpanoramic3d,
-  title={Argus: Metric Panoramic 3D Reconstruction for Indoor Scenes},
-  author={Xi Li and Linyuan Li and Yan Wu and Tong Rao and Kai Zhang and Xinchen Hui and Cihui Pan},
+@inproceedings{li2026argus,
+  title={Argus: Metric panoramic 3D reconstruction for indoor scenes},
+  author={Li, Xi and Li, Linyuan and Wu, Yan and Rao, Tong and Zhang, Kai and Hui, Xinchen and Pan, Cihui},
+  booktitle={European Conference on Computer Vision},
+  pages={628--647},
   year={2026},
-  eprint={2606.30047},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2606.30047}
+  organization={Springer}
 }
 ```
 
