@@ -52,6 +52,8 @@ Argus is a data-driven feed-forward network trained on Realsee3D that reconstruc
 *   **Model:** [RealseeTechnology/argus-realsee3d](https://huggingface.co/RealseeTechnology/argus-realsee3d)
 *   **Demo:** [RealseeDeveloper/Argus](https://huggingface.co/spaces/RealseeDeveloper/Argus)
 
+For managed integrations, the separate hosted Argus API accepts batches of 2:1 panoramas or 1:1 pinhole images. See the [hosted API Quickstart](https://developer.realsee.ai/docs/argus/quickstart) and [outputs and result handling](https://developer.realsee.ai/docs/argus/outputs). The service does not change this dataset's contents or terms, or the published research model's capabilities and license.
+
 > Building on Realsee3D? Feel free to open a PR/issue to have your work listed here.
 
 ## 📄 Citation
