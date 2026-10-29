@@ -1,0 +1,7 @@
+The Realsee-authored code identified in this directory is provided under PolyForm Noncommercial License 1.0.0 (PolyForm-Noncommercial-1.0.0). The standard license text in LICENSE is unmodified. Use, modification and distribution are permitted only within that license's permitted purposes and conditions.
+
+Realsee SDKs, third-party components, datasets, model weights, scans, photographs, textures, videos, fonts, trademarks and other separately licensed materials retain their own terms. This example-code license does not grant additional SDK rights.
+
+Earlier copies released under MIT, GNU GPL or another license retain their applicable permissions. Changing this repository's current license or consolidating its Git history does not revoke prior grants or copies held by others.
+
+Required Notice: Copyright (c) 2026 BEIKE REALSEE TECHNOLOGY (HK) LIMITED.

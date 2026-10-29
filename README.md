@@ -84,5 +84,8 @@ If you use the Realsee3D dataset in your research, please cite our paper:
 
 ### Code License
 
-The accompanying code for data parsing, visualization, and evaluation is released under the [MIT License](https://opensource.org/licenses/MIT), allowing for free use, modification, and distribution.
+The accompanying code for data parsing, visualization, and evaluation is released under [PolyForm Noncommercial License 1.0.0](LICENSE). The dataset, model weights and other assets remain subject to their separate agreements; this code-license update does not change those terms.
 
+## Current code license
+
+The identified Realsee-authored code is available under [PolyForm Noncommercial License 1.0.0](LICENSE), SPDX `PolyForm-Noncommercial-1.0.0`. The unmodified license governs permitted purposes, modification and distribution. This is source-available licensing, not an OSI-approved open source license. SDKs, third-party components and assets retain their separate terms. Earlier licensed copies retain their applicable rights, irrespective of this license change or Git history consolidation.
